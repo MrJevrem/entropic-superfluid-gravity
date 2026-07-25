@@ -4,7 +4,7 @@
 
 Code, derived products, and pre-registered prediction ledgers for a six-manuscript series deriving the Milgrom acceleration scale a₀ = c²√(Λ/24π) from the Dorau–Much relative-entropy theorem (PRL **136**, 091602) joined to Berezhiani–Khoury superfluid dark matter (PRD **92**, 103510) by two postulates — and staking the result on a **frozen, single-fork Gaia DR4 wide-binary prediction (δṽ = 0.12–0.17) decided on 2026-12-02**.
 
-Manuscripts: *(links added at deposit — Zenodo DOI / arXiv IDs)*
+Manuscripts: deposited at DOI [10.5281/zenodo.21561506](https://doi.org/10.5281/zenodo.21561506) *(arXiv IDs added when posted)*
 
 | Paper | Content |
 |---|---|
