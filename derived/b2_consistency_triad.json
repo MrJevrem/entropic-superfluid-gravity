@@ -1,0 +1,42 @@
+{
+ "eta_renormalization": {
+  "formula": "eps = m^4 c_s^5/(12 pi^3 hbar^3 P) x O(1)",
+  "values": {
+   "galactic_mid": 0.00035531487491498293,
+   "galactic_outskirts": 0.03215883869880527,
+   "cosmological_floor": 7.541081213679767e-75
+  },
+  "verdict": "galactic corrections are 3.6e-04 (mid) to 3.2e-02 (outskirts); floor 8e-75. The feared O(1) renormalization is RETIRED: D9's counted G_ph = 12 pi hbar c_s/m^2 is safe at the <=8-percent level everywhere it is used (O(1) diagram coefficient on the correction, not the leading term, tagged)."
+ },
+ "lemma4": {
+  "horizon_algebra_proof": [
+   "g_KM[phi] = d^2/ds^2 S_rel(omega_0||omega_{s phi}) = 2 S_rel[phi]  [Result-1 exactness]",
+   "E_can(matter-sourced, horizon) = boost flux = S_rel/(2 pi)          [paper Eq. 13]",
+   "=> E_can = g_KM/(4 pi)   \u2014 Lemma 4 holds on the horizon algebra, universal constant"
+  ],
+  "cornerstone_check": {
+   "N_trunc": 90,
+   "beta_omega": 0.5,
+   "alpha": 0.5,
+   "S_rel_numeric": 0.12499999999999888,
+   "S_rel_KM_exact": 0.125,
+   "agreement_pct": -8.992806499463768e-13,
+   "tanh_suppressed_alternative": 0.12245933120185457,
+   "verdict": "numeric = beta*omega*alpha^2 to numerical precision \u2014 NO tanh suppression: the second variation is Kubo-Mori, not Bures/SLD (Result-1 corollary VERIFIED at matrix level)"
+  },
+  "remaining": "bulk extension = the second-order theta^2 cancellation identity; in the phonon sector sigma=0 (spherical acoustic flows) reduces it to a single 1D integral identity with all quantities explicit \u2014 the last open piece, now fully posed"
+ },
+ "cmb": {
+  "gates": {
+   "g_over_a0|delta=0.0001": 3.583622030211675,
+   "g_over_a0|delta=0.0003": 10.750866090635023,
+   "g_over_a0|delta=0.001": 35.83622030211675,
+   "t_cross_over_t_Hubble_cs1e5": 2153.613894438684,
+   "jeans_cs_max_m_s": 24366.63721694303,
+   "cs_floor_branch_at_zstar": 3.426383088147835e-07,
+   "cs_naive_sharedg_at_zstar": 6669915.794071166
+  },
+  "Tc_scaling": "T_dm \u221d (1+z)^2 (free-streaming) and T_c \u221d n^{2/3} \u221d (1+z)^2: T/T_c frozen \u2014 phase status is redshift-independent (formation initial condition [P])",
+  "verdict": "(a) MOND force OFF at the acoustic-peak scale: g/a0 = 11 (3.6-36 over the delta band) \u2014 Newtonian regime; marginal only at damping-tail scales (flagged). (b) INDEPENDENT switch-off: phonon sound-crossing takes 2154x the Hubble time at the peak scale \u2014 the phonon force cannot equilibrate at recombination regardless of c_s: the CMB peaks are DOUBLY protected. (c) Jeans bound: c_s(z*) < 24367 m/s. Floor branch gives 3.4e-07 m/s \u2014 passes by ~11 dex; a naive shared-coupling Bogoliubov branch gives 6.7e+06 \u2014 fails by ~2.5 dex => that corner of the EOS is FORBIDDEN (a real, named constraint on the UV completion, not a failure of B2). (d) T/T_c frozen => condensate persists to z*. Omega_c matched by construction. Full Boltzmann re-run remains the escalation; all four gates PASS with one forbidden EOS corner identified."
+ }
+}

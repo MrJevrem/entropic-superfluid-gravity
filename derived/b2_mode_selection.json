@@ -1,0 +1,66 @@
+{
+ "target": {
+  "k1_over_n13": 4.257210661792902,
+  "nu_star": 1.3029400317411195,
+  "nu_star_exact": "4/sqrt(3 pi)",
+  "C_T": 10.942759631662366
+ },
+ "movement1": {
+  "k1_over_n13_by_env": {
+   "galactic": 3.972639792544398,
+   "dwarf": 3.8991480695830782,
+   "cosmic": 3.897777093900332
+  },
+  "verdict": "S(k)-weighted budget: k1/n^(1/3) = 3.973 (galactic) -> 3.898 (cosmic) \u2014 it violates exact universality parametrically (xi enters the weight) AND converges to the sharp Debye value in the dilute limit, i.e. it interpolates toward nu = 1 and can NEVER reach nu* = 1.303. Doubly excluded: spectral weightings both break D18-exactness and move AWAY from the target. The selection functional must be pure k-space geometry \u2014 D19's athermal theorem, now derived at the functional level with the corrected mechanism."
+ },
+ "movement2": {
+  "candidates": {
+   "nu=1 (Debye)": {
+    "k1": 3.8977770897207535,
+    "CT_dev_pct": -16.173040339012836
+   },
+   "nu=4/3": {
+    "k1": 4.290058794222051,
+    "CT_dev_pct": 1.549129756325951
+   },
+   "nu=3/2": {
+    "k1": 4.461840948901423,
+    "CT_dev_pct": 9.84439156711423
+   },
+   "nu=2 (two chiralities)": {
+    "k1": 4.910891403137155,
+    "CT_dev_pct": 33.06700394914686
+   }
+  },
+  "theorem": "nu* = 4/sqrt(3 pi) is irrational: NO sharp mode-count closes C_T exactly. Sharp Debye stays the leading approximation (-16%); the closure requires a smeared branch-termination edge."
+ },
+ "movement3": {
+  "edges": {
+   "sharp Debye edge (k1 = k_D)": {
+    "k1": 3.8977770897207535,
+    "k_dev_pct": -8.442936012021896,
+    "CT_dev_pct": -16.173040339012836
+   },
+   "Gaussian edge, rms selection": {
+    "k1": 4.3416075273496055,
+    "k_dev_pct": 1.982445132775279,
+    "CT_dev_pct": 4.0041911525952045
+   },
+   "Gaussian edge, mean selection": {
+    "k1": 4.0,
+    "k_dev_pct": -6.041764954252438,
+    "CT_dev_pct": -11.71850067088056
+   },
+   "sharp edge, rms selection": {
+    "k1": 3.019205151143458,
+    "k_dev_pct": -29.080203189382793,
+    "CT_dev_pct": -49.7038242034077
+   }
+  },
+  "gaussian_budget_scale": 3.5449077018110318,
+  "required_moment": 1.2009369551760027,
+  "gaussian_moment": 1.224744871391589,
+  "verdict": "best parameter-free prescription: Gaussian edge + rms selection = +2.0% in k (+3.9% in C_T). Exact closure pins ONE moment of the edge profile: <k^2>^{1/2}/k_g = 1.2009 (Gaussian: 1.2247)."
+ },
+ "final_verdict": "THE LAST NUMBER IS A MATERIAL CONSTANT. Three-movement result: (1) weighted budgets are excluded by universality \u2014 the selection is pure k-geometry; (2) no sharp count closes it \u2014 nu* = 4/sqrt(3pi) is irrational, so the branch edge is smeared; (3) the exact closure pins one moment of the edge profile (1.2011 vs Gaussian 1.2247 \u2014 the parameter-free estimate lands within 2%). The coefficient C_T is thus exactly known from the lock, mechanically localized to the phonon-branch termination edge of the quintic superfluid, approximated parameter-free to 2% in k, and NOT derivable by counting at any order \u2014 it is the analog of where helium's phonon-roton branch ends: a measured property of the quantum fluid. FORWARD PATH (experimental): a cold-atom condensate with engineered mu \u221d n^2 EOS (three-body-dominated interactions) realizes the same universality class; its branch-edge moment IS C_T up to statistics factors \u2014 the dark-matter force-law coefficient is measurable in a laboratory analog. The derivation program D0-D21 ends by converting its final unknown into an experimental proposal."
+}

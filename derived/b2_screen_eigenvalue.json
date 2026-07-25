@@ -1,0 +1,73 @@
+{
+ "identity_check": {
+  "D18_form": 10.942759631662367,
+  "simplified": 10.942759631662366,
+  "statement": "6(2sqrt2/3)^{2/3} = 4*3^{1/3} exactly ((2sqrt2)^{2/3}=2)"
+ },
+ "exclusion_tests": {
+  "results": {
+   "d=xi": {
+    "galactic": 1.1766397664781516,
+    "dwarf": 0.2079153396986499,
+    "cosmic": 4.8541780913367414e-08
+   },
+   "d=n^-1/3": {
+    "galactic": 5.959040303527704,
+    "dwarf": 5.959040303527704,
+    "cosmic": 5.959040303527705
+   },
+   "d=0.738 n^-1/3": {
+    "galactic": 10.941165795506247,
+    "dwarf": 10.941165795506247,
+    "cosmic": 10.941165795506246
+   }
+  },
+  "verdict": "d=xi: C_T varies by ~8 orders across environments \u2014 EXCLUDED (breaks D18 universality); d \u221d n^{-1/3}: constant \u2014 the screen thickness is density-set. The required a = 0.7380 reproduces C_T = 10.94 in every environment."
+ },
+ "two_scale_geometry": {
+  "values": {
+   "galactic": {
+    "spacing_lPl_ac": 0.0003884732525726117,
+    "thickness": 2.0748443566423045e-05,
+    "ratio": 0.053410224330811135
+   },
+   "dwarf": {
+    "spacing_lPl_ac": 0.003287081367922099,
+    "thickness": 7.380000000000003e-05,
+    "ratio": 0.02245152819160424
+   },
+   "cosmic": {
+    "spacing_lPl_ac": 129.49108419087057,
+    "thickness": 0.0014047542706272635,
+    "ratio": 1.0848270206438677e-05
+   }
+  },
+  "note": "thickness < spacing everywhere sampled \u2014 thin, well-separated screens: geometrically consistent"
+ },
+ "candidates": {
+  "hard-wall d = n^-1/3 (DD)": {
+   "C_T": 5.959040303527704,
+   "dev_pct": -45.543532855409715
+  },
+  "half-thermal d = lambda_c/2 (DD)": {
+   "C_T": 12.566370614359172,
+   "dev_pct": 14.837308296519325
+  },
+  "Debye saturation k1 = k_D": {
+   "C_T": 9.1729827022324,
+   "dev_pct": -16.173040339012836
+  },
+  "k1^3 = 24 pi n (flagged, underived)": {
+   "C_T": 10.775828072500733,
+   "dev_pct": -1.525497815730359
+  }
+ },
+ "required": {
+  "C_T": 10.942759631662366,
+  "a": 0.738,
+  "a2_exact": "pi/(4*3^{1/3})",
+  "k1_over_n13": 4.257210661792902,
+  "k1_vs_debye": 1.0922150148144822
+ },
+ "verdict": "NOT CLOSED \u2014 REDUCED TO FINAL FORM, with four structural theorems derived en route: (i) the confined quantum is a phonon (X-linearity); (ii) the screen thickness is density-set, d \u221d n^{-1/3} (healing/thermal screens excluded by 8-dex universality violation); (iii) the screen is athermal pure geometry (zeta cancels; C_T = 4*3^{1/3} zeta^{2/3} exactly); (iv) two-scale structure (entropic spacing l_Pl,ac, matter thickness ~0.74/n^{1/3}) \u2014 geometrically consistent. The boundary problem is now ONE 1D eigenvalue with its target known to four digits: k_1 = 2 sqrt(pi) 3^{1/6} n^{1/3} = 4.2573 n^{1/3} (d_eff = 0.7380 interparticle spacings). No canonical parameter-free profile lands exactly: hard-wall interparticle slab -46%; Debye saturation -16% (the leading mechanistic candidate: screens where the phonon mode budget saturates); half-thermal +15%; the 24-pi coincidence (-1.6%) is flagged as underived numerology. Kill-scope PASSED (a = O(1); an a >> 1 or << 1 would have falsified the screen picture). What closes it: the self-consistent screen density profile from the entropic sector's back-reaction (a dark-soliton-like depletion notch) and its lowest Bogoliubov eigenvalue \u2014 a well-posed GPE boundary computation, target 0.7380."
+}

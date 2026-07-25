@@ -1,0 +1,41 @@
+{
+ "K_locked_fiducial": 1.0730349112914555e-25,
+ "K_band": "x[0.1,10] from (n_gal, v_flat) choices",
+ "negative_lemma": {
+  "statement": "bulk phonon loops -> LHY term \u221d c_s^5 \u221d X^{5/2}, NOT X^{3/2}: the stiffness source is irreducible to the condensate (third irreducibility result, joining D11/D12's noise irreducibility)",
+  "lhy_over_P_ent": 0.0017779971035260236,
+  "d13_eps_loop": 0.000355,
+  "cross_check": "same object within O(1) conventions \u2014 D13.1's loop parameter IS the bulk X^{5/2} correction"
+ },
+ "inversion": {
+  "gamma_c_fiducial": 319161282381.1472,
+  "hbar_gamma_c_meV": 0.21009893475451716,
+  "compton_freq": 1.293165953059032e+16,
+  "chemical_freq": 1738589781.334921
+ },
+ "cancellation": {
+  "sweep": {
+   "galactic_mid": {
+    "gamma_c": 319161282381.1472,
+    "ratio_to_Tc": 10.941642596098395
+   },
+   "outskirts": {
+    "gamma_c": 19123372408.46244,
+    "ratio_to_Tc": 10.941642596098395
+   },
+   "dwarf": {
+    "gamma_c": 25227169518.97699,
+    "ratio_to_Tc": 10.941642596098392
+   },
+   "cosmic": {
+    "gamma_c": 69627455.92215481,
+    "ratio_to_Tc": 10.941642596098394
+   }
+  },
+  "statement": "gamma_c/(k_B T_c/hbar) is the SAME constant in every environment \u2014 the c_s-dependence cancels identically in the inversion",
+  "C_T_exact_formula": "6 (2 sqrt2/3)^{2/3} zeta(3/2)^{2/3}",
+  "C_T": 10.941642596098397
+ },
+ "gap_law": "omega_gap^2 = C_T (k_B T_c/hbar) X   [frozen]",
+ "verdict": "MATCHING CLOSES CONDITIONALLY \u2014 AND THE CONDITION IS UNIVERSAL. The inversion's c_s-dependence cancels exactly, so K_CW = K_locked holds in every environment simultaneously iff the screen-mode gap rides the condensate's critical temperature with the universal coefficient C_T = 10.94 \u2014 a pure number composed of D9's counted 12pi and BEC statistics (zeta(3/2)). hbar*gamma_c ~ 11 k_B T_c: physically natural (the screens' gap = the coherence scale), mid-spectrum (4e4 below Compton, 180x above chemical) \u2014 the kill-scope test passes. Residual [O] shrinks to ONE pure number: derive C_T = 10.94 from the screen-mode boundary problem. Emergence status: form (D17, CW-natural), environment-consistency (D18, exact cancellation), coefficient (one dimensionless number away)."
+}

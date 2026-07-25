@@ -1,0 +1,87 @@
+{
+ "assumed": [
+  "Dorau-Much PRL 136 091602 (seed identity, Eqs. 3/12/13/20/27/28)",
+  "B2: condensate entropy carrier (superfluid phonon sector)"
+ ],
+ "derivations": {
+  "D2_a0_lock": {
+   "values": {
+    "H0=70.0": {
+     "cH0": 6.800928323126138e-10,
+     "ratio_a0_cH0": 0.1658597100875634,
+     "vs_1_over_6": 0.9951582605253804,
+     "vs_1_over_2pi": 1.0421272934752441
+    },
+    "H0=67.4": {
+     "cH0": 6.548322413981453e-10,
+     "ratio_a0_cH0": 0.17225785914138633,
+     "vs_1_over_6": 1.033547154848318,
+     "vs_1_over_2pi": 1.0823280496033694
+    },
+    "H0=73.0": {
+     "cH0": 7.096282924587616e-10,
+     "ratio_a0_cH0": 0.15895645818906678,
+     "vs_1_over_6": 0.9537387491344007,
+     "vs_1_over_2pi": 0.9987528825748506
+    }
+   },
+   "a0_measured": 1.128e-10,
+   "reading": "a0/cH0 = 0.166 at H0=70 (=1/6 to 0.5%; Verlinde coefficient) but = 1/(2pi) to 0.2% at H0=73 \u2014 the O(1) coefficient is H0-tension-degenerate between {1/6, 1/2pi}; BOTH frozen as variants. Sharp corollary: Lambda-locked => a0(z)=CONST \u2014 consistent with our T2.4 result (const preferred at 6.3 sigma), which is now evidence FOR B2's lock, not merely against B3's."
+  },
+  "D5_phase_boundary": {
+   "rho_halo": 1e-22,
+   "m_eV": {
+    "min": 5.762749493690709,
+    "fiducial": 8.453105775995631,
+    "max": 16.299516981072177
+   },
+   "sigma_crit_fiducial_km_s": 600.0,
+   "prediction": "RAR/MOND phenomenology must BREAK in systems with sigma >~ 500-800 km/s (M ~ few x 1e13 Msun, group scale); clusters revert to Newton+condensate-as-CDM \u2014 quantifies T2.6 and postdicts the known cluster MOND failure.",
+   "assumptions": [
+    "ideal-BEC criterion",
+    "rho at halo scale 1e-22 kg/m^3",
+    "sigma_crit=600 km/s fiducial"
+   ]
+  },
+  "D4_wide_binaries": {
+   "healing_length_m": 6.998272834509654e-05,
+   "healing_vs_kAU": 2.339028223384216e-19,
+   "fork_b_requires_m_eV": 1.977205298530592e-18,
+   "m_fiducial_eV": 8.453105775995631,
+   "fork_b_status": "DERIVED AWAY: needs m < 2.0e-18 eV (fuzzy-DM regime), ~18 orders below the D5-derived m ~ 8.5 eV",
+   "a_ext": 2.1455934981054287e-10,
+   "y_ext": 1.9021218954835362,
+   "dv_fork_a1": 0.16727706390683594,
+   "dv_fork_a2": 0.12377236629290422,
+   "dv_refined": "0.146 +/- 0.022",
+   "consequence": "B2 collapses to ONE WB prediction dv ~ 0.12-0.17 (upper-EFE / borderline no-EFE class). A clean Newtonian DR4 outcome now KILLS B2 outright (fork-b escape removed); B2-vs-B3(0.20) discrimination weakens."
+  },
+  "D3_D7_fdt_noise": {
+   "T_c_local_K": 0.22379502084065592,
+   "Sa_white": 7.453920608491557e-85,
+   "E_pta_band": 7.442204567832675e-79,
+   "dex_below_K95": 65.89988587734841,
+   "dex_below_LPF": 54.609057865718725,
+   "reading": "even at T_ph = T_c (maximal bath), B2's gravitational FDT noise sits ~50 dex below every current ceiling: the PTA/LPF silence is now DERIVED, not assumed \u2014 B2 is permanently invisible to diffusion searches; all discrimination is galactic-dynamical (WB / RAR-break / ICM).",
+   "assumptions": [
+    "Bogoliubov S(k,w)",
+    "classical limit",
+    "c_s=100 km/s",
+    "T_ph<=T_c"
+   ]
+  },
+  "D6_saturation_partner": {
+   "lambda_dec_upper_Hz": 5.310183720539496e-90,
+   "fein_ceiling_Hz": 133.0,
+   "consistent": true,
+   "structural_price": "because the condensate decoheres lab matter at utterly negligible rates, B2 CANNOT sit on the Born-rule-emergent saturation line in laboratory settings: under B2 the program FORFEITS the measurement-problem-solving corner (recorded as a conceptual cost).",
+   "assumptions": [
+    "order-of-magnitude which-path monitor estimate [P]"
+   ]
+  },
+  "D0_D1_structure": {
+   "coherent_state_fit": "Dorau-Much is valid for coherent excitations only (their Ref. 42 caveat); a superfluid IS a macroscopic coherent state \u2014 B2 is the unique carrier for which the theorem's validity domain is the carrier's defining property.",
+   "acoustic_transplant": "the theorem is metric-agnostic: applied on the acoustic metric of the phonon sector it yields an emergent entropy-area law delta A_ac = 4 G_ph S_rel with G_ph fixed by condensate microphysics (the B2 lock), and Eq. 27's integration constant becomes the a0 lock (D2)."
+  }
+ }
+}

@@ -1,0 +1,113 @@
+{
+ "Sa_path_nHz_per_kpc": 5.917287343987188e-19,
+ "LPF_Sa": 3.0276000000000003e-30,
+ "LVK_Sh_25Hz": 2.8018547350233994e-50,
+ "LVK_Sa_per_m": 4.264470671061642e-42,
+ "windows": {
+  "ULD": {
+   "direct_window_dex": 9.0,
+   "direct": [
+    1e-25,
+    1e-16
+   ],
+   "admitted": "closed",
+   "status_direct": "open",
+   "status_admitted": "closed"
+  },
+  "NLC": {
+   "direct_window_dex": 11.0,
+   "direct": [
+    1e-35,
+    1e-24
+   ],
+   "admitted": [
+    1e-25,
+    1e-24
+   ],
+   "status_direct": "open",
+   "status_admitted": "open (1 dex)"
+  }
+ },
+ "t11_overlay": {
+  "crossover_index_g": -1.8266840619926201,
+  "reading": "T1.1 dominates over LPF for kernels redder (in S_a) than f^-1.83 \u2014 e.g. the tau=1/H0 Lorentzian tail (g=-2) sits AT the boundary; steeper-red kernels are PTA-dominated, white/blue kernels LPF-dominated",
+  "g=0": {
+   "Sa_at_3mHz_per_kpc": 5.917287343987188e-19,
+   "vs_LPF_dex": 11.291024162601628,
+   "dominant": "LPF"
+  },
+  "g=-2": {
+   "Sa_at_3mHz_per_kpc": 2.5692429343286066e-31,
+   "vs_LPF_dex": -1.0712933257164414,
+   "dominant": "T1.1"
+  },
+  "g=-4": {
+   "Sa_at_3mHz_per_kpc": 1.1155465117483335e-43,
+   "vs_LPF_dex": -13.43361081403451,
+   "dominant": "T1.1"
+  }
+ },
+ "lambda_ceilings": [
+  {
+   "system": "Gerlich2011_fullerene",
+   "type": "matter-wave",
+   "scale": "1e-24 kg",
+   "baseline": "lab",
+   "lambda_bound": "original floor source",
+   "units": "rate",
+   "admissible_mass_basis": "yes",
+   "reference": "Gerlich+ Nat.Comms 2 263 (2011)"
+  },
+  {
+   "system": "Fein2019_25kDa",
+   "type": "matter-wave",
+   "scale": "4.3e-23 kg",
+   "baseline": "lab",
+   "lambda_bound": "133",
+   "units": "Hz",
+   "admissible_mass_basis": "yes",
+   "reference": "Fein+ Nat.Phys 15 1242 (2019)"
+  },
+  {
+   "system": "Wang2021_Ybplus",
+   "type": "spin-coherence",
+   "scale": "ion",
+   "baseline": "lab",
+   "lambda_bound": "1.82e-4",
+   "units": "Hz",
+   "admissible_mass_basis": "no (spin not mass superposition)",
+   "reference": "Wang+ 2021"
+  },
+  {
+   "system": "Bild2023_cat",
+   "type": "mechanical",
+   "scale": "1.6e-8 kg",
+   "baseline": "lab",
+   "lambda_bound": "1e6",
+   "units": "Hz",
+   "admissible_mass_basis": "yes",
+   "reference": "Bild+ Science 380 274 (2023)"
+  },
+  {
+   "system": "SN1987A_neutrino",
+   "type": "astrophysical",
+   "scale": "10 MeV nu",
+   "baseline": "50 kpc",
+   "lambda_bound": "coherence survived",
+   "units": "ceiling",
+   "admissible_mass_basis": "mass-eigenstate",
+   "reference": "Hirata/Bionta/Alekseev 1987"
+  },
+  {
+   "system": "IceCube_decoherence",
+   "type": "astrophysical",
+   "scale": "TeV nu",
+   "baseline": "astro",
+   "lambda_bound": "Gamma0 contours",
+   "units": "reinterpretation pending T1.4",
+   "admissible_mass_basis": "mass-eigenstate",
+   "reference": "IceCube Nat.Phys 2024"
+  }
+ ],
+ "verdict": "No kernel class is newly closed by T2.0: the direct windows (ULD 9 dex, NLC 11 dex) are set by lab ceilings and floors [S]. T1.1's contribution is band-resolved: crossover at S_a \u221d f^-1.83 \u2014 the PTA line DOMINATES for kernels redder than ~f^-2 (the tau=1/H0 Lorentzian tail sits exactly at the boundary) and is subdominant to LPF for white/blue kernels [matching the plan's expectation once 'steep' is read as steep-red in acceleration]. Subject to the path->test-mass admissibility factor (labeled overlay, not merged into window arithmetic). The admissibility ruling (atlas \u00a79) remains the binding open issue; branches on ULD kernels die under admitted-AI ceilings independent of carrier."
+}

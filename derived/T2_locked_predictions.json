@@ -1,0 +1,221 @@
+{
+ "provenance": {
+  "git_commit": "802063e216b445dd019e257cfd9ca996c1087899",
+  "git_dirty": false,
+  "utc": "2026-07-24T20:30:41.574978+00:00",
+  "plan": "docs/T2_PLAN_branch_discrimination.md"
+ },
+ "band": {
+  "T_yr": 16.03,
+  "f_k_Hz": [
+   1.976798990270053e-09,
+   3.953597980540106e-09,
+   5.9303969708101585e-09,
+   7.907195961080211e-09,
+   9.883994951350265e-09
+  ],
+  "B4INT_s3": 8.97342519175557e+22
+ },
+ "validation": {
+  "powerlaw_log10rho_k2_k4": {
+   "k2": -6.802,
+   "k3": -7.183,
+   "k4": -7.454
+  },
+  "ceffyl_reference": {
+   "k2": -6.74,
+   "k3": -7.14,
+   "k4": -7.44
+  },
+  "tolerance_dex": 0.15
+ },
+ "lock": {
+  "xi": 1.0,
+  "statement": "delta a_rms / a0 = 1 at the field correlation scale (fluctuations generate the mean; Oppenheim-Russo mechanism)"
+ },
+ "kernels": {
+  "cosmo": "Lorentzian tau=1/H0 (local)",
+  "path": "Shapiro cells: l_c grid {0.1,1,10} pc, v_eff in {220 km/s, c}",
+  "K_full_matter": {
+   "0.1pc": 3.8470290118735796e-07,
+   "1pc": 3.847121642942688e-05,
+   "10pc": 0.0038471225692821138
+  },
+  "K_full_massless": {
+   "0.1pc": 2.51544567580303e-05,
+   "1pc": 0.03726965473254589,
+   "10pc": 5.218905436490871
+  },
+  "E_cosmo_local": 7.963205775546482e-16
+ },
+ "K95_reference": {
+  "grid": {
+   "3.000": 4.1051132905404656e-13,
+   "3.500": 4.72176663465084e-13,
+   "4.000": 5.13547548084444e-13,
+   "4.333": 5.907986576947427e-13,
+   "4.500": 6.1686980609134e-13
+  },
+  "source": "T1.1 envelope-min pulsars J1909-3744[PPTA joint] + J1640+2224[NG SPNA], uniform-A 95%, recomputed per gamma_c"
+ },
+ "branches": {
+  "B1": {
+   "carrier": "all-species entanglement (induced-G)",
+   "K_pred": {
+    "0.1pc|p=0.5": 3.719063320195473e-08,
+    "0.1pc|p=1.0": 3.5953542167042798e-09,
+    "1pc|p=0.5": 3.719152870029999e-06,
+    "1pc|p=1.0": 3.5954407877969046e-07,
+    "10pc|p=0.5": 0.0003719153765556123,
+    "10pc|p=1.0": 3.595441653534686e-05
+   },
+   "N_min": {
+    "0.1pc|p=0.5": 424005922805.1355,
+    "0.1pc|p=1.0": 651157.3717659469,
+    "1pc|p=0.5": 4240263419881849.0,
+    "1pc|p=1.0": 65117305.072321974,
+    "10pc|p=0.5": 4.240265461888324e+19,
+    "10pc|p=1.0": 6511732075.176561
+   },
+   "early_universe": {
+    "rule": "hidden dof ever thermalized above EW: DeltaNeff >= 0.027 per bosonic dof",
+    "N_max_thermalized": 11.11111111111111,
+    "dichotomy": "N_min > N_max_thermalized forces the never-thermalized loophole => retreat-flag per plan \u00a75.3"
+   },
+   "wb": {
+    "cls": "newtonian",
+    "dv": 0.0,
+    "derivation": "species count renormalizes G globally; no extra kAU-scale force"
+   },
+   "assumptions": [
+    "dilution exponent p in {1/2,1} (incoherent vs coherent species sum) \u2014 both frozen",
+    "K_full from PATH kernel, xi=1, v_eff=220 km/s, l_c grid frozen",
+    "N counted in effective bosonic dof relative to visible ~107"
+   ]
+  },
+  "B2": {
+   "carrier": "cold dark condensate (superfluid phonons)",
+   "K_pred": "T_c-suppressed: K = K_full * (T_c/T_dS); inverse problem frozen instead",
+   "T_c_ceiling_over_TdS": {
+    "0.1pc": 1.5357270659287596e-06,
+    "1pc": 1.5356900886628503e-08,
+    "10pc": 1.5356897188877134e-10
+   },
+   "T_dS_K": 2.7577856317497527e-30,
+   "wb": {
+    "cls_fork_a": "mond_efe_analog",
+    "dv_fork_a": 0.065,
+    "cls_fork_b": "newtonian",
+    "dv_fork_b": 0.0,
+    "derivation": "fork a: linearize P(X)~X sqrt|X| phonon kinetic term about the dominant galactic gradient a_ext ~ 1.6 a0 at R_sun => pair force rides external slope; G_eff/G - 1 ~ (1/2) sqrt(a0/a_ext) ~ 0.13 => dv = sqrt(1.13)-1 ~ 0.065. fork b: condensate coherence absent at kAU (Berezhiani-Khoury solar-system caveat) => pure Newton."
+   },
+   "assumptions": [
+    "phonon FDT amplitude \u221d k_B T_bath (linear)",
+    "reference temperature = de Sitter T_dS",
+    "EFE-analog linearization coefficient 1/2 \u2014 order-unity uncertainty logged"
+   ]
+  },
+  "B3": {
+   "carrier": "cosmological-horizon entropy (IR/elastic)",
+   "K_pred_leakage_E_per_pulsar": 7.963205775546482e-16,
+   "leakage_margin_dex": 2.924986864316066,
+   "pta_note": "distance-INDEPENDENT (local buffeting): bounded by per-pulsar quiet E95 ~ 6.7e-13 s^2, not by K95*d; f<<1/T power additionally absorbed by timing-model quadratics \u2014 null NOT over-claimable (plan T2.1.4)",
+   "a0_of_z": {
+    "rule": "a0(z) = a0 * H(z)/H0, flat LCDM Om=0.3",
+    "values": {
+     "z=0": 1.0,
+     "z=0.5": 1.3086252328302401,
+     "z=1.0": 1.7606816861659007,
+     "z=1.5": 2.321098877687032,
+     "z=2.0": 2.966479394838265,
+     "z=2.5": 3.6827299656640586
+    },
+    "kill": "cH(z) scaling rejected >=3sigma with inflated systematics => lock broken"
+   },
+   "wb": {
+    "cls_fork_a": "mond_no_efe_like",
+    "dv_fork_a": 0.2,
+    "cls_fork_b": "newtonian",
+    "dv_fork_b": 0.0,
+    "derivation": "fork a: Verlinde apparent-DM g_D = sqrt((cH0/6) g_B) applied to a point mass: boost (g_D/g_B) = sqrt(a0'/g_B) \u2014 reaches ~1.7 at 30 kAU => large rising signal, no-EFE-like. fork b: binary sits inside the Galaxy's entropy displacement => local elastic response saturated/screened => Newtonian."
+   },
+   "assumptions": [
+    "COSMO kernel Lorentzian tau=1/H0",
+    "a0' = cH0/6 in elastic formula",
+    "screening dichotomy frozen as forks a/b \u2014 Verlinde theory does not fix it"
+   ]
+  },
+  "B4": {
+   "carrier": "coarse-grained thermal entropy of traversed matter",
+   "K_pred": "K(sightline) = K_full * s_path/s_ref (s_ref = sample median); functional form frozen",
+   "t22_prediction": {
+    "response": "ACHROMATIC per-pulsar E_RN (v4 joint budgets)",
+    "slope_logE_logS": 1.0,
+    "requirement": "dependence must exceed the chromatic-channel dependence (differential statistic); loud/quiet contrast = s_max/s_min computed from the covariate table at comparison time",
+    "exclusion_rule": "measured coupling >=1 dex below lock => B4 excluded"
+   },
+   "wb": {
+    "cls": "newtonian",
+    "dv": 0.0,
+    "derivation": "kAU path entropy ~ 1e-8 of kpc sightline => force modification negligible"
+   },
+   "assumptions": [
+    "linear coupling of diffusion to local entropy density (slope=1)",
+    "two-phase WIM model for s_path: T_WIM=8e3 K uniform; hot fraction from EM excess"
+   ]
+  },
+  "B5": {
+   "carrier": "conformal/massless sector (theorem-native)",
+   "K_pred": {
+    "0.1pc|Omega_r": 2.2639011082227274e-09,
+    "0.1pc|Omega_r/Omega_m": 7.302906800718475e-09,
+    "1pc|Omega_r": 3.3542689259291304e-06,
+    "1pc|Omega_r/Omega_m": 1.0820222341706873e-05,
+    "10pc|Omega_r": 0.00046970148928417843,
+    "10pc|Omega_r/Omega_m": 0.0015151660944650919
+   },
+   "early_universe": {
+    "amplitude_of_z": "eps(z) = eps0 * rho_r(z)/rho_tot(z) -> full strength z>3400",
+    "eps0_forks": [
+     0.01,
+     0.1
+    ],
+    "observables": "DeltaNeff = 7.44 * rho_fluc/rho_gamma at BBN; mu ~ 1.4 * d(injected)/rho_gamma over z=5e4-2e6"
+   },
+   "wb": {
+    "cls": "newtonian",
+    "dv": 0.0,
+    "derivation": "Omega_r-suppressed today; no kAU force"
+   },
+   "assumptions": [
+    "massless carrier => v_eff = c in PATH kernel",
+    "today-suppression forks: Omega_r vs Omega_r/Omega_m \u2014 both frozen"
+   ]
+  }
+ },
+ "wb_adjudication": {
+  "estimators": [
+   "chae_style_deprojection",
+   "banik_style_forward_model"
+  ],
+  "agreement": "both must agree in sign and amplitude class for any claim",
+  "ecc_priors": [
+   "thermal f(e)=2e",
+   "power-law alpha(r_p) per Hwang+2022"
+  ],
+  "triple_handling": "RUWE<1.4 cut + nuisance f_triple in [0,0.15] marginalized",
+  "sample": "El-Badry-Rix-Heintz eDR3; parallax/sigma>20; d<200 pc; r_p in [2,30] kAU; no tertiary flags; both components G<18",
+  "classes": {
+   "newtonian": "|dv|<0.03",
+   "mond_efe": "0.03<=dv<0.12",
+   "mond_no_efe": "dv>=0.12"
+  },
+  "threshold": "class assignment requires >=3 sigma separation in the agreed estimator pair"
+ },
+ "external_numbers_verified": {
+  "lvk_o4a": "OmegaGW(25Hz) <= 2.0e-9 (a=2/3) / 2.8e-9 (flat), 95%, arXiv:2508.20721",
+  "neff": "Neff = 3.031 +/- 0.130(stat) +/- 0.045(fg), Planck+ACT+SPT 2025 => DeltaNeff<0.3 (2sig)",
+  "firas": "mu<9e-5, y<1.5e-5 (Fixsen+96)",
+  "lpf": "~1.74 fm s^-2 Hz^-1/2 above 2 mHz (Armano+18)"
+ }
+}

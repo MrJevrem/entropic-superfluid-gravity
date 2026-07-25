@@ -1,0 +1,35 @@
+{
+ "lemma": {
+  "statement": "Var(DeltaS_hor) = (alpha/8pi) <DeltaS_hor>; <DeltaK^2>=<K> iff alpha=8pi",
+  "mc_check_Var_over_mean_Srel": 1.0032767240727607,
+  "expected": 1.0,
+  "reading": "the paper's Eq.-28 coupling and the modular-fluctuation relation are one statement; the 8pi enters the VARIANCE channel linearly \u2014 exactly the alpha^(-1/2) amplitude structure D8 required. Alpha-side bookkeeping CLOSED."
+ },
+ "route_Q": {
+  "S_dS": 3.001973704413695e+122,
+  "a0_quantum": 3.283290660339147e-71,
+  "deficit_dex": 60.5385835120323,
+  "verdict": "EXCLUDED as the a0 source: quantum modular fluctuations give a0_Q ~ 3.3e-71 m/s^2 \u2014 61 dex short. (The test has teeth: this branch died.)"
+ },
+ "route_E": {
+  "S_second_derivative_sign": "+",
+  "verdict": "ILL-POSED: dS entropy is CONVEX in Lambda \u2014 no entropic Gaussian equilibrium exists; the classical Lambda-channel variance CANNOT be fixed by equilibrium thermodynamics. Consequence: the CQ (classical-quantum) DYNAMICS is structurally NECESSARY to stabilize the channel \u2014 the Dorau-Much x Oppenheim fusion is forced, not decorative."
+ },
+ "route_D": {
+  "required_sigma2_rel": 0.039788735772973836,
+  "required_per_efold_variance": 0.07957747154594767,
+  "is_1_over_4pi": true,
+  "chain": [
+   "a0 = kappa/sqrt(8pi)",
+   "<=> sigma_Lambda^2/Lambda^2 = 1/(8pi)   [via delta-a(R_H) = delta-Lambda c^2/sqrt(3 Lambda)]",
+   "<=> per-e-fold relative variance = 1/(4pi)   [OU stationary, gamma = H]",
+   "<=> f_floor = sqrt(4 pi) H   [with X_bar = H/2pi (D2 temperature lemma) and canonical dS kick delta-phi = H/2pi per e-fold: delta-X/X_bar = H/f per e-fold]"
+  ],
+  "kill_condition": "PROVE OR REFUTE: the Goldstone decay constant at the cosmological floor equals sqrt(4 pi) H. Inputs needed: P(X) floor normalization from matching the condensate ground-state pressure to rho_Lambda via alpha=8pi."
+ },
+ "bonus_cs2": {
+  "cs2_exact": 0.5000000000000001,
+  "reading": "deep-MOND phonons propagate at 1/sqrt(2) of the sector speed; observable echo: c_s ~ v_flat/sqrt(2) in galaxy outskirts \u2014 feeds back into D5's (m, sigma_crit) via c_s."
+ },
+ "verdict": "KILL TEST: SURVIVED WHERE IT COULD FAIL, NOT YET CLOSED. Executed results: (1) the alpha-side bookkeeping is CLOSED exactly \u2014 Var(DeltaS) = (alpha/8pi)<DeltaS>, so <DeltaK^2>=<K> iff alpha=8pi: D8's sqrt(8pi) is the Eq.-28 coupling seen in the variance channel [new exact lemma]. (2) The quantum route FAILS by ~61 dex \u2014 correctly excluded (no false confirmation). (3) The equilibrium route is ill-posed (convex dS entropy) \u2014 the classical variance must be DYNAMICAL, i.e., CQ dynamics is structurally required. (4) The remaining freedom reduces to ONE dimensionless identity: f_floor = sqrt(4pi) H. D8/D9 die iff that identity fails."
+}

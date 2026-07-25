@@ -1,0 +1,14 @@
+# Zenodo concept DOI is added here at first release (v1.0-deposit).
+cff-version: 1.2.0
+message: "If you use this code or the frozen prediction ledgers, please cite this repository and the accompanying paper series."
+title: "Entropic Gravity on a Dark Superfluid — analysis code and frozen prediction ledgers"
+type: software
+authors:
+  - family-names: Jevremovic
+    given-names: Marko
+    email: mr.marko.jevremovic@gmail.com
+notes: "Developed with the help of Claude Fable 5 (AI research system, Anthropic), which performed the derivations, wrote the analysis code, and drafted the manuscripts; the human author directed the program and takes sole responsibility for the content."
+repository-code: "https://github.com/MrJevrem/entropic-superfluid-gravity"
+license: MIT
+version: v1.0-deposit
+date-released: 2026-07-25

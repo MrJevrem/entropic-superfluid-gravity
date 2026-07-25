@@ -1,0 +1,84 @@
+{
+ "formula": "G_ph = 12 pi hbar c_s / m^2  (central; eta = 1/(48 pi xi^2))",
+ "central": {
+  "m_eV": 8.5,
+  "cs_km_s": 100,
+  "xi_m": 6.959663590516102e-05,
+  "l_ph_m": 0.0004273205778298729,
+  "eta_per_m2": 1369091.2495579857,
+  "G_ph_SI": 1.731535712345482e+42,
+  "G_ph_over_G_N": 2.594449673876959e+52,
+  "M_ac_eV": 1.38437378372494,
+  "M_ac_over_m": 0.16286750396764
+ },
+ "scheme_band_G_ph": {
+  "kc=1.0/xi|tail=False": 1.731535712345482e+42,
+  "kc=1.0/xi|tail=True": 1.1545110763738379e+42,
+  "kc=2.0/xi|tail=False": 4.328839280863705e+41,
+  "kc=2.0/xi|tail=True": 2.8862776909345947e+41
+ },
+ "grid": {
+  "m=5.8eV,cs=50km/s": {
+   "G_ph": 1.8594449348537617e+42,
+   "l_ph_mm": 1.2524913488116962,
+   "M_ac_eV": 0.9446315230123117
+  },
+  "m=5.8eV,cs=100km/s": {
+   "G_ph": 3.7188898697075234e+42,
+   "l_ph_mm": 0.6262456744058481,
+   "M_ac_eV": 0.9446315230123117
+  },
+  "m=5.8eV,cs=200km/s": {
+   "G_ph": 7.437779739415047e+42,
+   "l_ph_mm": 0.31312283720292405,
+   "M_ac_eV": 0.9446315230123117
+  },
+  "m=8.5eV,cs=50km/s": {
+   "G_ph": 8.65767856172741e+41,
+   "l_ph_mm": 0.8546411556597457,
+   "M_ac_eV": 1.38437378372494
+  },
+  "m=8.5eV,cs=100km/s": {
+   "G_ph": 1.731535712345482e+42,
+   "l_ph_mm": 0.42732057782987287,
+   "M_ac_eV": 1.38437378372494
+  },
+  "m=8.5eV,cs=200km/s": {
+   "G_ph": 3.463071424690964e+42,
+   "l_ph_mm": 0.21366028891493644,
+   "M_ac_eV": 1.38437378372494
+  },
+  "m=16.3eV,cs=50km/s": {
+   "G_ph": 2.354312454683298e+41,
+   "l_ph_mm": 0.44567176828882443,
+   "M_ac_eV": 2.6547403146725315
+  },
+  "m=16.3eV,cs=100km/s": {
+   "G_ph": 4.708624909366596e+41,
+   "l_ph_mm": 0.22283588414441222,
+   "M_ac_eV": 2.6547403146725315
+  },
+  "m=16.3eV,cs=200km/s": {
+   "G_ph": 9.417249818733192e+41,
+   "l_ph_mm": 0.11141794207220611,
+   "M_ac_eV": 2.6547403146725315
+  }
+ },
+ "closures": {
+  "species": "N=1 (single Goldstone of broken U(1)) \u2014 no Sakharov species ambiguity; counting parameter-free given (m, c_s)",
+  "alpha_universality": "the acoustic-Einstein coupling is alpha=8pi in acoustic-Planck units (paper Eq. 28 is unit-agnostic once S=deltaA/4 holds) \u2014 the sqrt(8pi) of D8 is sector-independent; the counting supplies the eta side of the D8 bookkeeping",
+  "volume_law_crossover_m": 1.1331269317424949e+77,
+  "volume_law_verdict": "thermal-phonon volume entropy at T_dS overtakes the area law only beyond L* ~ 1.1e+77 m >> horizon: the Verlinde-elastic (entropy-competition) mechanism is UNAVAILABLE inside B2's counted budget \u2014 the a0 lock must run through the Lambda-channel variance (D8's route). B2 and B3 mechanisms are now cleanly separated by computation, not taste.",
+  "sonic_horizon_example": {
+   "r_s_m": 13274052079.999998,
+   "S_over_kB": 3.031442208225384e+27,
+   "note": "1 Msun DM-accretion sonic horizon carries a finite, counted entropy \u2014 analogue-Hawking budget well-defined"
+  },
+  "d4_consistency": "same xi as D4's fork-b elimination (0.07 mm) \u2014 no new scales introduced"
+ },
+ "honesty": [
+  "counting is Gaussian (free-phonon): valid in the quadratic/high-X regime; the deep-MOND X^{3/2} regime renormalizes eta at O(1) \u2014 named residual: MOND-regime eta renormalization",
+  "k_c choice contributes the factor-4 scheme band; Bogoliubov tail adds +50%: G_ph known to a factor ~[0.2, 1.5] x central",
+  "remaining conversion: counted G_ph <-> BK Lagrangian normalization <-> a0 chain \u2014 kill condition: if the counted G_ph forces an a0 coefficient != sqrt(Lambda/24pi), D8 dies"
+ ]
+}

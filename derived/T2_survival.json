@@ -1,0 +1,69 @@
+{
+ "provenance": {
+  "freeze_files": [
+   "T2_locked_predictions.json"
+  ],
+  "note": "all predictions frozen at commit embedded in freeze; comparison data staged after (guard-enforced)"
+ },
+ "B1": {
+  "status": "retreat-flagged",
+  "ledger": [
+   "T2.1: excluded at SM content in ALL forks (3.8-8.8 dex); N_min 6.5e5-4.2e19",
+   "T2.3: ever-thermalized fork excluded by 4.8 dex in DeltaNeff",
+   "survives only as never-thermalized hidden sector with no other signature"
+  ],
+  "killing_test": "T2.1+T2.3 (predictive variants); retreat loophole recorded"
+ },
+ "B2": {
+  "status": "alive",
+  "ledger": [
+   "T2.1: PTA inverse bound only \u2014 T_c/T_dS < 1.5e-10..1.5e-06 per l_c fork",
+   "T2.4: constrains via a0 statics only weakly (not its lock)",
+   "frozen WB forks: dv=0.065 (EFE-analog) | 0 (decoherent)"
+  ],
+  "next_observation": "Gaia DR4 (2026-12-02) via frozen T2.5 pipeline; T2.6 conditional after"
+ },
+ "B3": {
+  "status": "retreat-flagged",
+  "ledger": [
+   "T2.1: PTA permanently uninformative (margin +2.9 dex, distance-independent kernel)",
+   "T2.4: a0=const preferred over frozen cH(z) lock at ~6.3 sigma nominal / ~3.2 sigma inflated \u2014 meets >=3sigma kill threshold marginally on literature-grade [S] compilation",
+   "frozen WB forks (0.20 | 0) remain live for DR4"
+  ],
+  "killing_test": "T2.4 (marginal; primary-IFU reanalysis = escalation); survives only by demoting a0~cH0 to today-coincidence"
+ },
+ "B4": {
+  "status": "dead",
+  "ledger": [
+   "T2.2: primary frozen statistic null \u2014 partial rho=+0.01 (perm p=0.9581), Sidak p=0.7937",
+   "measured slope -12.8 vs frozen +1.0 at 2.1 dex available contrast => coupling >=1 dex below lock",
+   "caveats logged: logistic IRLS unstable (flag), pygedm unavailable (EM-flag substitute)"
+  ],
+  "killing_test": "T2.2 (frozen exclusion rule)"
+ },
+ "B5": {
+  "status": "dead",
+  "ledger": [
+   "T2.1: ALL frozen forks 3.6-9.4 dex ABOVE the T1.1 ceiling => excluded",
+   "T2.3: independent second exclusion \u2014 4/4 frozen forks violate DeltaNeff and/or FIRAS mu (FIRAS mu is the binding boun..."
+  ],
+  "killing_test": "T2.1 (PTA ceiling); T2.3 (FIRAS mu) independently"
+ },
+ "T2_0_context": "No kernel class is newly closed by T2.0: the direct windows (ULD 9 dex, NLC 11 dex) are set by lab ceilings and floors [S]. T1.1's contribution is band-resolved: crossover at S_a \u221d f^-1.83 \u2014 the PTA line DOMINATES for kernels redder than ~f^-2 (the tau=1/H0 Lorentzian tail sits exactly at the boundary) and is subdominant to LPF for white/blue kernels [matching the plan's expectation once 'steep' is read as steep-red in acceleration]. Subject to the path->test-mass admissibility factor (labeled overlay, not merged into window arithmetic). The admissibility ruling (atlas \u00a79) remains the binding open issue; branches on ULD kernels die under admitted-AI ceilings independent of carrier.",
+ "T2_5_status": "PIPELINE NOT VALIDATED on eDR3. Published-result reproduction (Chae 2023 boost; Banik 2024 alpha~1) is qualitative only at this stage \u2014 full per-paper reproduction remains open engineering before Dec 2026. NO branch adjudication from this dry-run (frozen: phase 3 = DR4 with identical code).",
+ "T2_6": "deferred-conditional: B2 alive => execute after DR4 per plan \u00a78 ordering",
+ "summary": {
+  "dead": [
+   "B4",
+   "B5"
+  ],
+  "retreat_flagged": [
+   "B1",
+   "B3"
+  ],
+  "alive": [
+   "B2"
+  ],
+  "decisive_future": "Gaia DR4 Dec 2026 (B2 forks; B3 WB forks) after control-bin systematic (~5%) is repaired"
+ }
+}

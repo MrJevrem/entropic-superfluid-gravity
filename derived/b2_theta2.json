@@ -1,0 +1,44 @@
+{
+ "kappa": 1.0,
+ "widths": {
+  "w=0.2": {
+   "c2_numeric": 25.132741293654483,
+   "c2_analytic": 25.132741228718345,
+   "c2_agree_pct": 2.583726788074614e-07,
+   "c4_numeric": 127.75410121904788,
+   "c4_analytic": 127.75207463571716,
+   "c4_agree_pct": 0.001586340837511635,
+   "E_can_per_s4": 5.083093542129783,
+   "beta_Ecan_check": 1.0,
+   "s6_residual_ratio": 0.006044819274977894
+  },
+  "w=1.0": {
+   "c2_numeric": 25.132741244093822,
+   "c2_analytic": 25.132741228718345,
+   "c2_agree_pct": 6.117708561959034e-08,
+   "c4_numeric": 67.5210126721841,
+   "c4_analytic": 67.5220581366662,
+   "c4_agree_pct": -0.0015483302952423728,
+   "E_can_per_s4": 2.6866173300471896,
+   "beta_Ecan_check": 1.0,
+   "s6_residual_ratio": 0.004024037329993166
+  },
+  "w=5.0": {
+   "c2_numeric": 25.132679989712116,
+   "c2_analytic": 25.132741228718345,
+   "c2_agree_pct": -0.0002436622637880248,
+   "c4_numeric": 17.48176735071353,
+   "c4_analytic": 17.48206156813904,
+   "c4_agree_pct": -0.0016829675628660112,
+   "E_can_per_s4": 0.695589128501545,
+   "beta_Ecan_check": 1.0,
+   "s6_residual_ratio": 0.001257208265142312
+  }
+ },
+ "narrow_pulse_limit": {
+  "c4_analytic_limit": 157.91367041742973,
+  "c4_at_w0p2": 127.75410121904788,
+  "note": "w->0: int theta1^2 = (8pi E0)^2/(2 kappa) => c4 = +16 pi^2 E0^2/kappa^2"
+ },
+ "verdict": "IDENTITY RESOLVED \u2014 the numerics corrected the derivation's sign en route: the naive 'exact cancellation' reading of the Sec.-5 kill test FAILS (the O(s^4) term is nonzero), and it is a SURPLUS, not a deficit: the anticipating (teleological) horizon treats focusing as extra effective flux. The mismatch equals +beta E_can EXACTLY, with E_can = (1/16pi) int theta_1^2 dv = (kappa/16pi) int (-U) theta_U^2 dU \u2014 the identical Kay-Wald (-U)-weighted quadratic form with theta in place of d_U phi. Corrected second-order law, verified to <0.3%:  delta(A/4) = S_rel + beta E_can + O(s^6). The conjecture 'canonical energy = Kubo-Mori information' (Lemma 4) is realized CONSTRUCTIVELY in the reduced model with universal coefficient beta = 2pi/kappa. What died: the too-strong all-orders matching delta A = 4 S_rel. What is confirmed: the master-conjecture architecture at Gaussian order. Remaining (research-grade): the shear sector and genuine scalar scattering; pp-wave exactness of phi(U) marks the route."
+}

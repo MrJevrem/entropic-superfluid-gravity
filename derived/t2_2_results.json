@@ -1,0 +1,102 @@
+{
+ "frozen": {
+  "response": "ACHROMATIC per-pulsar E_RN (v4 joint budgets)",
+  "slope_logE_logS": 1.0,
+  "requirement": "dependence must exceed the chromatic-channel dependence (differential statistic); loud/quiet contrast = s_max/s_min computed from the covariate table at comparison time",
+  "exclusion_rule": "measured coupling >=1 dex below lock => B4 excluded"
+ },
+ "table_n": 50,
+ "achromatic": {
+  "all": {
+   "s_path": {
+    "partial_rho": 0.008,
+    "perm_p": 0.9581
+   },
+   "EM": {
+    "partial_rho": 0.124,
+    "perm_p": 0.4091
+   },
+   "ne": {
+    "partial_rho": 0.025,
+    "perm_p": 0.8567
+   },
+   "hii": {
+    "partial_rho": -0.063,
+    "perm_p": 0.6693
+   },
+   "_sidak_over_3": 0.7937
+  },
+  "gold": {
+   "s_path": {
+    "partial_rho": -0.115,
+    "perm_p": 0.5265
+   },
+   "EM": {
+    "partial_rho": 0.292,
+    "perm_p": 0.0995
+   },
+   "ne": {
+    "partial_rho": 0.218,
+    "perm_p": 0.2235
+   },
+   "hii": {
+    "partial_rho": -0.117,
+    "perm_p": 0.6181
+   },
+   "_sidak_over_3": 0.2698
+  },
+  "b_gt5": {
+   "s_path": {
+    "partial_rho": -0.048,
+    "perm_p": 0.7743
+   },
+   "EM": {
+    "partial_rho": 0.084,
+    "perm_p": 0.6054
+   },
+   "ne": {
+    "partial_rho": 0.057,
+    "perm_p": 0.7285
+   },
+   "hii": {
+    "partial_rho": 0.008,
+    "perm_p": 0.9666
+   },
+   "_sidak_over_3": 0.9386
+  }
+ },
+ "chromatic_ppta": {
+  "s_path": {
+   "partial_rho": 0.007,
+   "perm_p": 0.984
+  },
+  "EM": {
+   "partial_rho": -0.192,
+   "perm_p": 0.5477
+  },
+  "ne": {
+   "partial_rho": -0.27,
+   "perm_p": 0.3956
+  },
+  "hii": {
+   "partial_rho": 0.044,
+   "perm_p": 0.9317
+  },
+  "_sidak_over_3": 0.7792
+ },
+ "differential_rho": {
+  "s_path": 0.001,
+  "EM": 0.316,
+  "ne": 0.295
+ },
+ "logistic": {
+  "beta_s_path": 731.6099360176919,
+  "perm_p": 0.0426
+ },
+ "slope_measured": -12.827104219262866,
+ "contrast_log10": 2.11179474390216,
+ "deviations": [
+  "pygedm unavailable (build failed): NE2001 HII tagging replaced by EM>90th-pct indicator",
+  "chromatic control PPTA-only (NG uses DMX)"
+ ]
+}

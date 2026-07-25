@@ -1,0 +1,116 @@
+{
+ "T2_locked_predictions.json": {
+  "K95_grid": {
+   "3.000": 4.1051132905404656e-13,
+   "3.500": 4.72176663465084e-13,
+   "4.000": 5.13547548084444e-13,
+   "4.333": 5.907986576947427e-13,
+   "4.500": 6.1686980609134e-13
+  },
+  "rows": {
+   "B1": {
+    "forks": {
+     "0.1pc|p=0.5": {
+      "K_pred": 3.719063320195473e-08,
+      "margin_dex": -4.8,
+      "verdict_at_SM_content": "EXCLUDED",
+      "N_min": 424005922805.1355
+     },
+     "0.1pc|p=1.0": {
+      "K_pred": 3.5953542167042798e-09,
+      "margin_dex": -3.78,
+      "verdict_at_SM_content": "EXCLUDED",
+      "N_min": 651157.3717659469
+     },
+     "1pc|p=0.5": {
+      "K_pred": 3.719152870029999e-06,
+      "margin_dex": -6.8,
+      "verdict_at_SM_content": "EXCLUDED",
+      "N_min": 4240263419881849.0
+     },
+     "1pc|p=1.0": {
+      "K_pred": 3.5954407877969046e-07,
+      "margin_dex": -5.78,
+      "verdict_at_SM_content": "EXCLUDED",
+      "N_min": 65117305.072321974
+     },
+     "10pc|p=0.5": {
+      "K_pred": 0.0003719153765556123,
+      "margin_dex": -8.8,
+      "verdict_at_SM_content": "EXCLUDED",
+      "N_min": 4.240265461888324e+19
+     },
+     "10pc|p=1.0": {
+      "K_pred": 3.595441653534686e-05,
+      "margin_dex": -7.78,
+      "verdict_at_SM_content": "EXCLUDED",
+      "N_min": 6511732075.176561
+     }
+    },
+    "branch_verdict": "retreat-flagged",
+    "note": "ALL forks: N_min >> N_max_thermalized=11 => B1 survives ONLY via a never-thermalized hidden sector of >=7e+05 dof => RETREAT-FLAG (plan \u00a75.3)"
+   },
+   "B2": {
+    "T_c_ceiling_over_TdS": {
+     "0.1pc": 1.5357270659287596e-06,
+     "1pc": 1.5356900886628503e-08,
+     "10pc": 1.5356897188877134e-10
+    },
+    "T_dS_K": 2.7577856317497527e-30,
+    "branch_verdict": "pta-inverse-bound-only",
+    "note": "PTA bounds T_c/T_dS at 1e-7..1e-10 per l_c fork \u2014 no independent T_c prediction exists to contradict; discrimination rides on T2.4/T2.5/T2.6 per decision matrix"
+   },
+   "B3": {
+    "E_leak": 7.963205775546482e-16,
+    "margin_dex": 2.92,
+    "branch_verdict": "pta-permanently-uninformative",
+    "note": "distance-INDEPENDENT (local buffeting): bounded by per-pulsar quiet E95 ~ 6.7e-13 s^2, not by K95*d; f<<1/T power additionally absorbed by timing-model quadratics \u2014 null NOT over-claimable (plan T2.1.4)"
+   },
+   "B4": {
+    "branch_verdict": "deferred-to-T2.2",
+    "frozen_effect": {
+     "response": "ACHROMATIC per-pulsar E_RN (v4 joint budgets)",
+     "slope_logE_logS": 1.0,
+     "requirement": "dependence must exceed the chromatic-channel dependence (differential statistic); loud/quiet contrast = s_max/s_min computed from the covariate table at comparison time",
+     "exclusion_rule": "measured coupling >=1 dex below lock => B4 excluded"
+    }
+   },
+   "B5": {
+    "forks": {
+     "0.1pc|Omega_r": {
+      "K_pred": 2.2639011082227274e-09,
+      "margin_dex": -3.58,
+      "verdict": "EXCLUDED"
+     },
+     "0.1pc|Omega_r/Omega_m": {
+      "K_pred": 7.302906800718475e-09,
+      "margin_dex": -4.09,
+      "verdict": "EXCLUDED"
+     },
+     "1pc|Omega_r": {
+      "K_pred": 3.3542689259291304e-06,
+      "margin_dex": -6.75,
+      "verdict": "EXCLUDED"
+     },
+     "1pc|Omega_r/Omega_m": {
+      "K_pred": 1.0820222341706873e-05,
+      "margin_dex": -7.26,
+      "verdict": "EXCLUDED"
+     },
+     "10pc|Omega_r": {
+      "K_pred": 0.00046970148928417843,
+      "margin_dex": -8.9,
+      "verdict": "EXCLUDED"
+     },
+     "10pc|Omega_r/Omega_m": {
+      "K_pred": 0.0015151660944650919,
+      "margin_dex": -9.41,
+      "verdict": "EXCLUDED"
+     }
+    },
+    "branch_verdict": "EXCLUDED",
+    "note": "every frozen (l_c, suppression) fork lands ABOVE the T1.1 ceiling"
+   }
+  }
+ }
+}

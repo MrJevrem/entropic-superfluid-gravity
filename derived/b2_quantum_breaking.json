@@ -1,0 +1,10 @@
+{
+ "internal": "no drift channel in {A1-A4}; sigma_Lambda is stationary ensemble amplitude; CQ route 60-122 dex short (D12)",
+ "N_dS": 1.054565628238737e+122,
+ "t_Q_yr_minimal": 1.849961124588747e+132,
+ "t_Q_yr_Nsp100": 1.8499611245887473e+130,
+ "dw_per_hubble": 9.48257721684075e-123,
+ "desi_margin_orders": 120.72204361647701,
+ "verdict": "w=-1 safe within series; substrate-road tension quantified to 1e-122 per t_H (observationally void); eternal-future conflict only",
+ "paper_changes": "none required"
+}

@@ -1,0 +1,89 @@
+{
+ "rules": {
+  "estimators": [
+   "chae_style_deprojection",
+   "banik_style_forward_model"
+  ],
+  "agreement": "both must agree in sign and amplitude class for any claim",
+  "ecc_priors": [
+   "thermal f(e)=2e",
+   "power-law alpha(r_p) per Hwang+2022"
+  ],
+  "triple_handling": "RUWE<1.4 cut + nuisance f_triple in [0,0.15] marginalized",
+  "sample": "El-Badry-Rix-Heintz eDR3; parallax/sigma>20; d<200 pc; r_p in [2,30] kAU; no tertiary flags; both components G<18",
+  "classes": {
+   "newtonian": "|dv|<0.03",
+   "mond_efe": "0.03<=dv<0.12",
+   "mond_no_efe": "dv>=0.12"
+  },
+  "threshold": "class assignment requires >=3 sigma separation in the agreed estimator pair"
+ },
+ "n_sample": 42840,
+ "bins": {
+  "control_0.2-1kAU": {
+   "n": 21656,
+   "thermal": {
+    "delta_v": 0.0489,
+    "delta_v_err": 0.0037,
+    "alpha": 0.98,
+    "f_t": 0.15
+   },
+   "hwang": {
+    "delta_v": 0.0587,
+    "delta_v_err": 0.0038,
+    "alpha": 1.02,
+    "f_t": 0.15
+   }
+  },
+  "2-5kAU": {
+   "n": 6483,
+   "thermal": {
+    "delta_v": 0.118,
+    "delta_v_err": 0.0075,
+    "alpha": 1.08,
+    "f_t": 0.15
+   },
+   "hwang": {
+    "delta_v": 0.1284,
+    "delta_v_err": 0.0084,
+    "alpha": 1.12,
+    "f_t": 0.15
+   }
+  },
+  "5-10kAU": {
+   "n": 2272,
+   "thermal": {
+    "delta_v": 0.1406,
+    "delta_v_err": 0.0138,
+    "alpha": 1.1,
+    "f_t": 0.15
+   },
+   "hwang": {
+    "delta_v": 0.1513,
+    "delta_v_err": 0.0143,
+    "alpha": 1.14,
+    "f_t": 0.15
+   }
+  },
+  "10-30kAU": {
+   "n": 1393,
+   "thermal": {
+    "delta_v": 0.1731,
+    "delta_v_err": 0.0178,
+    "alpha": 1.18,
+    "f_t": 0.15
+   },
+   "hwang": {
+    "delta_v": 0.184,
+    "delta_v_err": 0.017,
+    "alpha": 1.22,
+    "f_t": 0.15
+   }
+  }
+ },
+ "validation": {
+  "control_bin_newtonian": false,
+  "note": "control bin (g >> a0) must give dv~0, alpha~1 under both e-priors"
+ },
+ "dry_run_status": "PIPELINE NOT VALIDATED on eDR3. Published-result reproduction (Chae 2023 boost; Banik 2024 alpha~1) is qualitative only at this stage \u2014 full per-paper reproduction remains open engineering before Dec 2026. NO branch adjudication from this dry-run (frozen: phase 3 = DR4 with identical code)."
+}

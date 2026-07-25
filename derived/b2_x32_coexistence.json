@@ -1,0 +1,44 @@
+{
+ "couplings": {
+  "lambda_quartic": 7.011772013082172e-40,
+  "a_s_m": 1.619206079514171e-49,
+  "g_contact_Jm3": 1.4934008638863972e-81
+ },
+ "C2_C3_margins": {
+  "galactic_mid": {
+   "cs_lam2_over_cs_ent2": 4.435075310092374e-43,
+   "P_ent_over_P_lam": 2.2547531441561294e+42
+  },
+  "galactic_outskirts": {
+   "cs_lam2_over_cs_ent2": 5.375848860718029e-45,
+   "P_ent_over_P_lam": 1.8601713439288065e+44
+  },
+  "cosmic_floor": {
+   "cs_lam2_over_cs_ent2": 3.400546870055623e-21,
+   "P_ent_over_P_lam": 2.940703475684318e+20
+  }
+ },
+ "C2_no_entropic": {
+  "fragmentation_scale_pc": 10.63981117023802,
+  "growth_time_over_t_universe": 7214861316314996.0,
+  "verdict": "alone, the attractive ALP condensate is modulationally unstable at ~10 pc but with growth time ~1e16 x t_universe \u2014 dynamically irrelevant; WITH the entropic term the dispersion is positive for all k with 43 dex of margin"
+ },
+ "C5_superfluidity": {
+  "microscopic_v_crit": 0.0,
+  "entropic_v_crit_m_s": 100000.0,
+  "hybrid_dispersion": "omega^2 = c_ent^2 k^2 + (hbar k^2/2m)^2  =>  omega = c_ent k sqrt(1 + (k xi/2)^2), xi = hbar/(m c_ent)",
+  "d9_regulator": "EXACTLY the Bogoliubov form D9's counting assumed \u2014 the coexistence DERIVES the D9 regulator; healing length crossover at k = 2/xi",
+  "xi_check_mm": 0.06959663590516102,
+  "verdict": "an ideal condensate has quadratic dispersion (Landau v_crit = 0): the ALP alone is NOT a superfluid. Every phonon phenomenon the theory uses \u2014 c_s, the Landau no-friction results (D15.3), the healing length (D4), the counting cutoff (D9) \u2014 is SUPPLIED by the entropic sector. Coexistence is one-way dependence: the ALP provides the coherent substrate; the entropic sector provides the superfluidity."
+ },
+ "C1_symmetry_CW": {
+  "statement": "P_CW(2+1d) = +(omega_gap^2)^{3/2} hbar/(12 pi c^2)-form: power 3/2 exact, no log (odd dimension), pressure positive \u2014 matching the required X^{3/2} term in form and sign when gap^2 \u221d X (horizon modes are per-transverse-point chiral 2+1d systems, Kay-Wald)",
+  "residual": "coefficient matching K_CW = K_locked remains open [O] \u2014 the last gap between 'coexistence proven' and 'emergence derived'"
+ },
+ "C4_crossovers": {
+  "cmb_floor_branch": "D13.3's 'floor branch' c_s(z*) = sqrt(hbar H(z*)/(pi m)) = 3.4e-7 m/s IS the entropic branch at X = H(z)/2pi \u2014 gate passes by 11 dex (already verified); branch now correctly labeled",
+  "bullet": "the Bullet bound constrains g_micro; actual g_micro is 60 dex below it (D16)",
+  "normal_phase": "no coherent theta => X^{3/2} inoperative => CDM-like (D15.9) \u2014 consistent"
+ },
+ "theorem": "COEXISTENCE PROVEN (C1-C5): the sum L = P_ent(X) + P_micro(X) is symmetry-legal (same shift invariant; non-analyticity has the 2+1d-CW form and sign); stable (entropic stiffness exceeds the attractive quartic by ~43 dex in every environment; the residual no-entropic instability is 1e16 x t_universe slow); hierarchy total (P_ent/P_lambda ~ 1e42; quantum pressure enters only at k ~ 1/xi = the D9 cutoff); crossovers reproduce every prior assumption (CMB floor branch, Bullet, normal phase). BONUS THEOREM: the microscopic ALP has quadratic dispersion \u2014 Landau v_crit = 0 \u2014 so the entropic sector does not merely coexist with the superfluid: it IS the superfluidity. The hybrid dispersion derives D9's Bogoliubov regulator. Residual [O]: the CW coefficient matching (K_CW = K_locked) \u2014 the final step from coexistence to full microscopic emergence."
+}

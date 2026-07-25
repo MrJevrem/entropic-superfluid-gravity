@@ -1,0 +1,90 @@
+{
+ "bins": {
+  "control_0.2-1kAU": {
+   "n": 21656,
+   "thermal": {
+    "delta_v": -0.0056,
+    "delta_v_err": 0.0037
+   },
+   "hwang": {
+    "delta_v": -0.0038,
+    "delta_v_err": 0.0039
+   }
+  },
+  "2-5kAU": {
+   "n": 6483,
+   "thermal": {
+    "delta_v": 0.0527,
+    "delta_v_err": 0.0076
+   },
+   "hwang": {
+    "delta_v": 0.0561,
+    "delta_v_err": 0.008
+   }
+  },
+  "5-10kAU": {
+   "n": 2272,
+   "thermal": {
+    "delta_v": 0.0721,
+    "delta_v_err": 0.0135
+   },
+   "hwang": {
+    "delta_v": 0.0751,
+    "delta_v_err": 0.0138
+   }
+  },
+  "10-30kAU": {
+   "n": 1393,
+   "thermal": {
+    "delta_v": 0.0998,
+    "delta_v_err": 0.0168
+   },
+   "hwang": {
+    "delta_v": 0.1025,
+    "delta_v_err": 0.0191
+   }
+  }
+ },
+ "repair_nuisances": {
+  "thermal": {
+   "eta": 0.95,
+   "f_t": 0.14,
+   "dv_ctrl": -0.0061,
+   "dv_err": 0.0038
+  },
+  "hwang": {
+   "eta": 0.96,
+   "f_t": 0.14,
+   "dv_ctrl": -0.004,
+   "dv_err": 0.0037
+  }
+ },
+ "validation": {
+  "control_repaired": true,
+  "target": "|dv|<0.02"
+ },
+ "revision": {
+  "reason": "control-bin rail at f_t=0.15 + literature hidden multiplicity 0.2-0.5; noise-free MC vs noisy data asymmetry; mass-scale nuisance calibrated on the g>>a0 control (its design role). Estimator-side only; the frozen prediction dv=0.12-0.17 is untouched.",
+  "changes": [
+   "MC noise convolution (per-bin empirical sigma_v/v_c)",
+   "f_t grid [0,0.15] -> [0,0.5]",
+   "mass-scale nuisance eta in [0.90,1.30], control-calibrated"
+  ],
+  "frozen_for_DR4": {
+   "thermal": {
+    "eta": 0.95,
+    "f_t": 0.14,
+    "dv_ctrl": -0.0061,
+    "dv_err": 0.0038
+   },
+   "hwang": {
+    "eta": 0.96,
+    "f_t": 0.14,
+    "dv_ctrl": -0.004,
+    "dv_err": 0.0037
+   }
+  },
+  "residual_assumption": "f_t (hidden multiplicity) and eta assumed separation-independent: calibrated on 0.2-1 kAU, applied to 2-30 kAU \u2014 the leading residual systematic; a separation-dependent f_t is the named DR4-era refinement"
+ },
+ "note": "NO adjudication from eDR3 (frozen: phase 3 = DR4, identical repaired code)."
+}

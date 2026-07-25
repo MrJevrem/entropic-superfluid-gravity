@@ -1,0 +1,54 @@
+{
+ "frozen_against": {
+  "git_commit": "38465afc79fcfa41573c36da01be3f0c80006a71",
+  "utc": "2026-07-25T10:35:28.352217+00:00",
+  "script": "analysis/t3_predictions_freeze.py",
+  "plan": "docs/T3_PLAN_sigma_resolved_RAR.md"
+ },
+ "baselines": {
+  "fb2500": 0.09936498873399403,
+  "fb2500_sd": 0.013440089068798556,
+  "fb500": 0.115,
+  "cosmic": 0.156,
+  "retention_vs_cosmic": 0.6369550559871412
+ },
+ "fits": {
+  "V0.5 baseline-mean": {
+   "f25": 0.09936498873399403,
+   "f50": 0.115,
+   "sigma_b": 657.3050317455188,
+   "m": 7.894134535875648,
+   "step": 0.9999999999986828,
+   "width": 1.2847821521730531
+  },
+  "V0.5lo baseline-1sd": {
+   "f25": 0.08592489966519548,
+   "f50": 0.095,
+   "sigma_b": 574.3738398031554,
+   "m": 8.734413588797066,
+   "step": 0.9999999999999902,
+   "width": 1.2231753875883238
+  }
+ },
+ "bootstrap": {
+  "median": 659.1051068527347,
+  "lo": 620.6127415707026,
+  "hi": 703.7047688479367
+ },
+ "m_band_proposal": {
+  "central": 7.877959317884649,
+  "stat_rho": [
+   6.307094987660502,
+   9.801030132424817
+  ],
+  "syst": [
+   7.500442234323868,
+   16.1
+  ],
+  "previous": [
+   5,
+   25
+  ]
+ },
+ "etg_caveat": "stars-only shelf budgets omit hot gas: sigma_b biased low (direction stated)"
+}

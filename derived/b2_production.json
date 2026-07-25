@@ -1,0 +1,107 @@
+{
+ "mechanism": "vacuum misalignment; intermediate-scale ALP",
+ "fiducial": {
+  "m_eV": 8.5,
+  "T_osc_TeV": 44.893424598815464,
+  "gstar": 106.75,
+  "phi_i_GeV": 320511097198.06683,
+  "f_a_GeV": 320511097198.06683,
+  "H_inf_max_GeV": 4585396.103288612,
+  "r_max": 3.421895475860554e-16,
+  "g_agamma_GeV": 3.62344277591074e-15,
+  "tau_decay_s": 1.6413006197150663e+31,
+  "tau_over_t_universe": 37731048729081.984,
+  "line_nm": 291.7270588235294,
+  "quartic": 7.0331796309817495e-40,
+  "sigma_over_m_cm2_g": 8.740072871632365e-64
+ },
+ "mass_sweep": {
+  "m=5.8eV": {
+   "m_eV": 5.8,
+   "T_osc_TeV": 37.084059551265376,
+   "gstar": 106.75,
+   "phi_i_GeV": 352647495571.83453,
+   "f_a_GeV": 352647495571.83453,
+   "H_inf_max_GeV": 5045155.896834049,
+   "r_max": 4.142497029436781e-16,
+   "g_agamma_GeV": 3.293242215880112e-15,
+   "tau_decay_s": 6.253978674518096e+31,
+   "tau_over_t_universe": 143769624701565.44,
+   "line_nm": 427.5310344827586,
+   "quartic": 2.7050442839229408e-40,
+   "sigma_over_m_cm2_g": 4.069426316978724e-64
+  },
+  "m=8.5eV": {
+   "m_eV": 8.5,
+   "T_osc_TeV": 44.893424598815464,
+   "gstar": 106.75,
+   "phi_i_GeV": 320511097198.06683,
+   "f_a_GeV": 320511097198.06683,
+   "H_inf_max_GeV": 4585396.103288612,
+   "r_max": 3.421895475860554e-16,
+   "g_agamma_GeV": 3.62344277591074e-15,
+   "tau_decay_s": 1.6413006197150663e+31,
+   "tau_over_t_universe": 37731048729081.984,
+   "line_nm": 291.7270588235294,
+   "quartic": 7.0331796309817495e-40,
+   "sigma_over_m_cm2_g": 8.740072871632365e-64
+  },
+  "m=16.3eV": {
+   "m_eV": 16.3,
+   "T_osc_TeV": 62.16802566386502,
+   "gstar": 106.75,
+   "phi_i_GeV": 272364751010.3973,
+   "f_a_GeV": 272364751010.3973,
+   "H_inf_max_GeV": 3896589.786981584,
+   "r_max": 2.471054933627482e-16,
+   "g_agamma_GeV": 4.2639644646866455e-15,
+   "tau_decay_s": 1.6807292493379965e+30,
+   "tau_over_t_universe": 3863745400777.0034,
+   "line_nm": 152.1276073619632,
+   "quartic": 3.5815696926743543e-39,
+   "sigma_over_m_cm2_g": 3.214048389292736e-63
+  }
+ },
+ "anchor_check": {
+  "fuzzy_dm_phi_i": 1.2989064544712477e+17,
+  "expect": "~1e17 GeV",
+  "ok": true
+ },
+ "coldness": {
+  "cosmic_occupancy_at_3km_s": 456.99615692555574,
+  "zeta32": 2.612,
+  "verdict": "condensed from birth even at cosmic mean density \u2014 grounds D13's phase-persistence initial condition"
+ },
+ "scenarios": {
+  "pre_inflationary": {
+   "preferred": true,
+   "H_inf_cap_GeV": 4585396.103288612,
+   "r_cap": 3.421895475860554e-16,
+   "note": "homogeneous theta_i; NO miniclusters; isocurvature near the cap is a POSITIVE future CMB channel"
+  },
+  "post_inflationary": {
+   "minicluster_comoving_m": 40056653464.05756,
+   "minicluster_mass_kg": 143712.9119095159,
+   "note": "micro-miniclusters (~1e5 kg, sub-AU) \u2014 dynamically irrelevant; string/wall contributions [O]"
+  }
+ },
+ "convergence": "the r-cap (~1e-15) INDEPENDENTLY reproduces the program's Sec.-8 no-tensor falsifier: a primordial B-mode detection now kills BOTH the classical-gravity program and the carrier production \u2014 a DOUBLE kill, from disjoint physics",
+ "bullet_consistency": "cosine quartic lambda = 7.0e-40; sigma/m = 8.7e-64 cm^2/g \u2014 60 dex under the Bullet bound: the production story delivers exactly the (nearly) non-self-interacting carrier D15.5 demanded",
+ "em_channel": {
+  "g_agamma_generic": 3.62344277591074e-15,
+  "line_band_nm": [
+   152,
+   428
+  ],
+  "fiducial_line_nm": 291.7270588235294,
+  "tau_over_tU": 37731048729081.984,
+  "current_bounds": "MUSE-class: g < ~1e-12..1e-13 at 2.7-5.3 eV \u2014 generic coupling sits 2 orders below; photophobic fork frozen",
+  "verdict": "an ultra-faint DM decay line at 152-428 nm is the theory's only prospective electromagnetic detection channel"
+ },
+ "open_items": [
+  "theta_i ~ O(1) naturalness / measure",
+  "UV origin of f_a ~ 2e11 GeV",
+  "E/N (photophobic vs generic) \u2014 both frozen",
+  "coexistence proof: emergent X^{3/2} sector atop the ALP potential (D15.5 [O])"
+ ]
+}

@@ -1,0 +1,456 @@
+{
+ "frozen_against": {
+  "git_commit": "38465afc79fcfa41573c36da01be3f0c80006a71",
+  "utc": "2026-07-25T10:35:28.352217+00:00",
+  "script": "analysis/t3_predictions_freeze.py",
+  "plan": "docs/T3_PLAN_sigma_resolved_RAR.md"
+ },
+ "n_points": 226,
+ "fit": {
+  "a": -0.1999999999993502,
+  "b": 0.7790555550952432,
+  "sigma_b": 253.65658623149656,
+  "width": 0.918455559491916
+ },
+ "sigma_b": {
+  "median": 252.3123433341978,
+  "lo16": 214.84052282083587,
+  "hi84": 315.4573358279831
+ },
+ "m_eV": {
+  "median": 16.18735415091899,
+  "lo": 13.690656302779571,
+  "hi": 18.261758314722403,
+  "rho_fork_outer": [
+   11.512423807478013,
+   21.71701292032798
+  ]
+ },
+ "sun09": [
+  {
+   "name": "NGC1550",
+   "z": 0.0124,
+   "sigma": 412.0,
+   "T500": 1.06,
+   "D": 0.226,
+   "n_ap": 2,
+   "est_T": false,
+   "tier2": true
+  },
+  {
+   "name": "NGC3402",
+   "z": 0.0153,
+   "sigma": 344.0,
+   "T500": 0.74,
+   "D": 0.409,
+   "n_ap": 1,
+   "est_T": true,
+   "tier2": false
+  },
+  {
+   "name": "A262",
+   "z": 0.0163,
+   "sigma": 558.0,
+   "T500": 1.94,
+   "D": 0.377,
+   "n_ap": 1,
+   "est_T": true,
+   "tier2": false
+  },
+  {
+   "name": "NGC383",
+   "z": 0.017,
+   "sigma": 517.0,
+   "T500": 1.67,
+   "D": 0.457,
+   "n_ap": 1,
+   "est_T": true,
+   "tier2": false
+  },
+  {
+   "name": "3C449",
+   "z": 0.0171,
+   "sigma": 394.0,
+   "T500": 0.97,
+   "D": 0.41,
+   "n_ap": 1,
+   "est_T": true,
+   "tier2": false
+  },
+  {
+   "name": "NGC533",
+   "z": 0.0185,
+   "sigma": 412.0,
+   "T500": 1.06,
+   "D": 0.339,
+   "n_ap": 1,
+   "est_T": true,
+   "tier2": false
+  },
+  {
+   "name": "NGC741",
+   "z": 0.0185,
+   "sigma": 451.0,
+   "T500": 1.27,
+   "D": 0.359,
+   "n_ap": 1,
+   "est_T": true,
+   "tier2": false
+  },
+  {
+   "name": "MKW4",
+   "z": 0.02,
+   "sigma": 503.0,
+   "T500": 1.58,
+   "D": 0.258,
+   "n_ap": 2,
+   "est_T": false,
+   "tier2": false
+  },
+  {
+   "name": "A3581",
+   "z": 0.023,
+   "sigma": 519.0,
+   "T500": 1.68,
+   "D": 0.345,
+   "n_ap": 1,
+   "est_T": true,
+   "tier2": false
+  },
+  {
+   "name": "NGC5129",
+   "z": 0.023,
+   "sigma": 349.0,
+   "T500": 0.76,
+   "D": 0.264,
+   "n_ap": 1,
+   "est_T": true,
+   "tier2": false
+  },
+  {
+   "name": "NGC1132",
+   "z": 0.0233,
+   "sigma": 398.0,
+   "T500": 0.99,
+   "D": 0.358,
+   "n_ap": 1,
+   "est_T": true,
+   "tier2": false
+  },
+  {
+   "name": "UGC2755",
+   "z": 0.0245,
+   "sigma": 349.0,
+   "T500": 0.76,
+   "D": 0.358,
+   "n_ap": 1,
+   "est_T": true,
+   "tier2": false
+  },
+  {
+   "name": "NGC4325",
+   "z": 0.0257,
+   "sigma": 378.0,
+   "T500": 0.89,
+   "D": 0.414,
+   "n_ap": 1,
+   "est_T": true,
+   "tier2": false
+  },
+  {
+   "name": "HCG51",
+   "z": 0.0258,
+   "sigma": 412.0,
+   "T500": 1.06,
+   "D": 0.538,
+   "n_ap": 1,
+   "est_T": true,
+   "tier2": false
+  },
+  {
+   "name": "3C442A",
+   "z": 0.0263,
+   "sigma": 463.0,
+   "T500": 1.34,
+   "D": 0.362,
+   "n_ap": 2,
+   "est_T": false,
+   "tier2": true
+  },
+  {
+   "name": "UGC5088",
+   "z": 0.0274,
+   "sigma": 360.0,
+   "T500": 0.81,
+   "D": 0.349,
+   "n_ap": 1,
+   "est_T": false,
+   "tier2": true
+  },
+  {
+   "name": "NGC6338",
+   "z": 0.0274,
+   "sigma": 555.0,
+   "T500": 1.92,
+   "D": 0.407,
+   "n_ap": 1,
+   "est_T": true,
+   "tier2": false
+  },
+  {
+   "name": "NGC4104",
+   "z": 0.0282,
+   "sigma": 475.0,
+   "T500": 1.41,
+   "D": 0.31,
+   "n_ap": 2,
+   "est_T": false,
+   "tier2": true
+  },
+  {
+   "name": "RBS461",
+   "z": 0.0296,
+   "sigma": 556.0,
+   "T500": 1.93,
+   "D": 0.433,
+   "n_ap": 1,
+   "est_T": true,
+   "tier2": false
+  },
+  {
+   "name": "ESO552-020",
+   "z": 0.0314,
+   "sigma": 525.0,
+   "T500": 1.72,
+   "D": 0.45,
+   "n_ap": 1,
+   "est_T": true,
+   "tier2": false
+  },
+  {
+   "name": "A1177",
+   "z": 0.0316,
+   "sigma": 469.0,
+   "T500": 1.37,
+   "D": 0.334,
+   "n_ap": 2,
+   "est_T": false,
+   "tier2": true
+  },
+  {
+   "name": "IC1262",
+   "z": 0.0326,
+   "sigma": 527.0,
+   "T500": 1.73,
+   "D": 0.498,
+   "n_ap": 1,
+   "est_T": true,
+   "tier2": false
+  },
+  {
+   "name": "NGC6269",
+   "z": 0.0348,
+   "sigma": 525.0,
+   "T500": 1.72,
+   "D": 0.263,
+   "n_ap": 2,
+   "est_T": false,
+   "tier2": true
+  },
+  {
+   "name": "ESO306-017",
+   "z": 0.0358,
+   "sigma": 616.0,
+   "T500": 2.37,
+   "D": 0.33,
+   "n_ap": 2,
+   "est_T": false,
+   "tier2": true
+  },
+  {
+   "name": "NGC5098",
+   "z": 0.0368,
+   "sigma": 392.0,
+   "T500": 0.96,
+   "D": 0.178,
+   "n_ap": 2,
+   "est_T": false,
+   "tier2": false
+  },
+  {
+   "name": "A1139",
+   "z": 0.0398,
+   "sigma": 568.0,
+   "T500": 2.01,
+   "D": 0.58,
+   "n_ap": 1,
+   "est_T": true,
+   "tier2": false
+  },
+  {
+   "name": "A160",
+   "z": 0.0447,
+   "sigma": 519.0,
+   "T500": 1.68,
+   "D": 0.324,
+   "n_ap": 2,
+   "est_T": false,
+   "tier2": false
+  },
+  {
+   "name": "UGC842",
+   "z": 0.0452,
+   "sigma": 497.0,
+   "T500": 1.54,
+   "D": 0.358,
+   "n_ap": 2,
+   "est_T": false,
+   "tier2": true
+  },
+  {
+   "name": "A2717",
+   "z": 0.0498,
+   "sigma": 624.0,
+   "T500": 2.43,
+   "D": 0.358,
+   "n_ap": 2,
+   "est_T": false,
+   "tier2": false
+  },
+  {
+   "name": "RXJ1022+3830",
+   "z": 0.0543,
+   "sigma": 558.0,
+   "T500": 1.94,
+   "D": 0.371,
+   "n_ap": 2,
+   "est_T": false,
+   "tier2": false
+  },
+  {
+   "name": "AS1101",
+   "z": 0.0564,
+   "sigma": 642.0,
+   "T500": 2.57,
+   "D": 0.267,
+   "n_ap": 2,
+   "est_T": false,
+   "tier2": true
+  },
+  {
+   "name": "ESO351-021",
+   "z": 0.0571,
+   "sigma": 428.0,
+   "T500": 1.14,
+   "D": 0.186,
+   "n_ap": 2,
+   "est_T": false,
+   "tier2": false
+  },
+  {
+   "name": "A3880",
+   "z": 0.0581,
+   "sigma": 632.0,
+   "T500": 2.49,
+   "D": 0.285,
+   "n_ap": 2,
+   "est_T": false,
+   "tier2": false
+  },
+  {
+   "name": "A1991",
+   "z": 0.0587,
+   "sigma": 655.0,
+   "T500": 2.68,
+   "D": 0.312,
+   "n_ap": 2,
+   "est_T": false,
+   "tier2": false
+  },
+  {
+   "name": "A1275",
+   "z": 0.0637,
+   "sigma": 484.0,
+   "T500": 1.46,
+   "D": 0.233,
+   "n_ap": 2,
+   "est_T": false,
+   "tier2": true
+  },
+  {
+   "name": "A2092",
+   "z": 0.0669,
+   "sigma": 517.0,
+   "T500": 1.67,
+   "D": 0.336,
+   "n_ap": 2,
+   "est_T": false,
+   "tier2": true
+  },
+  {
+   "name": "RXJ1206-0744",
+   "z": 0.068,
+   "sigma": 553.0,
+   "T500": 1.91,
+   "D": 0.362,
+   "n_ap": 1,
+   "est_T": true,
+   "tier2": false
+  },
+  {
+   "name": "A1238",
+   "z": 0.072,
+   "sigma": 634.0,
+   "T500": 2.51,
+   "D": 0.478,
+   "n_ap": 1,
+   "est_T": true,
+   "tier2": false
+  },
+  {
+   "name": "A744",
+   "z": 0.0729,
+   "sigma": 599.0,
+   "T500": 2.24,
+   "D": 0.478,
+   "n_ap": 1,
+   "est_T": true,
+   "tier2": false
+  },
+  {
+   "name": "A2462",
+   "z": 0.0733,
+   "sigma": 610.0,
+   "T500": 2.32,
+   "D": 0.31,
+   "n_ap": 2,
+   "est_T": false,
+   "tier2": false
+  },
+  {
+   "name": "A1692",
+   "z": 0.0848,
+   "sigma": 647.0,
+   "T500": 2.61,
+   "D": 0.357,
+   "n_ap": 2,
+   "est_T": false,
+   "tier2": false
+  },
+  {
+   "name": "A2550",
+   "z": 0.122,
+   "sigma": 559.0,
+   "T500": 1.95,
+   "D": 0.286,
+   "n_ap": 2,
+   "est_T": false,
+   "tier2": false
+  }
+ ],
+ "conventions": [
+  "M* = 10^LKs (M/L_K = 1, SLUGGS-matched); aperture 0.7 at r2500, 1.0 at r500 (logged)",
+  "class scatters SPARC .20 / ETG .22 / S09 .12 / V06 .08 (empirical)"
+ ],
+ "field_ETG_rule": "rho_env < 0.5 mechanical (residual group centrals noted: N3607, N1407)"
+}

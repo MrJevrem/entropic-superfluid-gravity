@@ -1,0 +1,41 @@
+{
+ "bounds": {
+  "DeltaNeff": 0.3,
+  "mu": 9e-05,
+  "y": 1.5e-05
+ },
+ "B1": {
+  "N_min_most_favorable": 651157.3717659469,
+  "DeltaNeff_if_ever_thermalized": 17581.249037680565,
+  "violation_dex": 4.767928471018265,
+  "verdict": "thermalized fork EXCLUDED by DeltaNeff by 4.8 dex; survives ONLY as a never-thermalized hidden sector with no other signature => RETREAT-FLAGGED (unfalsifiable-as-stated, plan \u00a75.3)"
+ },
+ "B5": {
+  "eps0=0.01|f_diss=1.0": {
+   "DeltaNeff": 0.07440000000000001,
+   "mu": 0.013999999999999999,
+   "dneff_excluded": false,
+   "mu_excluded": true
+  },
+  "eps0=0.01|f_diss=0.1": {
+   "DeltaNeff": 0.07440000000000001,
+   "mu": 0.0014,
+   "dneff_excluded": false,
+   "mu_excluded": true
+  },
+  "eps0=0.1|f_diss=1.0": {
+   "DeltaNeff": 0.7440000000000001,
+   "mu": 0.13999999999999999,
+   "dneff_excluded": true,
+   "mu_excluded": true
+  },
+  "eps0=0.1|f_diss=0.1": {
+   "DeltaNeff": 0.7440000000000001,
+   "mu": 0.013999999999999999,
+   "dneff_excluded": true,
+   "mu_excluded": true
+  }
+ },
+ "B5_verdict": "4/4 frozen forks violate DeltaNeff and/or FIRAS mu (FIRAS mu is the binding bound in every fork). B5 was already EXCLUDED by T2.1 (PTA ceiling); T2.3 is an INDEPENDENT second exclusion of all frozen forks \u2014 the branch is doubly dead.",
+ "escalation": "damping-tail envelope re-fit vs Planck high-ell residuals: NOT run (flagged)"
+}

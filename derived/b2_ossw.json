@@ -1,0 +1,25 @@
+{
+ "units": "reduced Planck (hbar=c=Mbar=1); H = 5.130e-61",
+ "no_go": "OSSW saturation fixes the PRODUCT D2*D0 = (hbar D_B/2)^2 \u2014 a hyperbola, not a point. Without an independent D0, no variance is derivable. [structural]",
+ "assignments": {
+  "horizon_thermal": {
+   "sigma_over_Lambda": 7.235350199821902e-62,
+   "shortfall_dex": 60.44042051380771,
+   "note": "the MAXIMAL horizon-native decoherence -> the LARGEST saturated noise the patch can justify"
+  },
+  "single_channel": {
+   "sigma_over_Lambda": 1.6663615651839486e-123,
+   "shortfall_dex": 122.0781108301526
+  }
+ },
+ "cross_check": {
+  "quantum_floor_1_over_sqrtS": 5.772974216439822e-62,
+  "thermal_saturation_matches_quantum_floor": true,
+  "note": "saturation + horizon-thermal D0 reproduces the D10 quantum-modular noise scale \u2014 two independent computations agree on the quantum floor; the trade-off's hbar^2/4 IS the quantum limit, as it must be"
+ },
+ "inverted_prediction": {
+  "D0_implied_over_thermal": 1.315706355003652e-121,
+  "classicalization_audit": "the homogeneous Lambda-channel couples to total patch energy only; a position superposition has identical branch energies => Gamma_dec = 0 identically. The channel owes NO classicalization duty; local (inhomogeneous) CQ channels \u2014 the ones the atlas/T1.1 ceilings bound \u2014 carry that burden."
+ },
+ "verdict": "ROUTE DEAD. Saturation with the maximal horizon-native decoherence yields sigma/Lambda ~ 7.2e-62 \u2014 60.4 dex short of 1/sqrt(8pi); the minimal assignment is worse. The saturated CQ noise in the Lambda-channel IS the quantum floor (cross-check passed) and can never reach the a0-required amplitude. EXHAUSTION THEOREM (with D11): matter-sector routes dead, CQ-saturation routes dead => the stochastic-Lambda amplitude sigma_Lambda/Lambda = 1/sqrt(8pi) is an IRREDUCIBLE NEW CONSTANT of the framework \u2014 it joins G and Lambda as measured inputs (program limitations register #3 gains a sibling). The a0 lock a0 = c^2 sqrt(Lambda/24pi) stands as a LAW with measured normalization, exactly as Newton's G stands in the fundamental sector. Benign corollary: because the homogeneous channel owes no classicalization duty, its super-saturation does not damage the Born-rule program \u2014 but it cannot inherit the saturation normalization either; Sec. 8.2's emergence story and the a0 mechanism live on DIFFERENT channels."
+}

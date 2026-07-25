@@ -1,0 +1,212 @@
+{
+ "frozen_against": {
+  "git_commit": "38465afc79fcfa41573c36da01be3f0c80006a71",
+  "utc": "2026-07-25T10:35:28.352217+00:00",
+  "script": "analysis/t3_predictions_freeze.py",
+  "plan": "docs/T3_PLAN_sigma_resolved_RAR.md"
+ },
+ "rows": [
+  {
+   "name": "NGC720",
+   "sigma": 227.0,
+   "D": -0.011,
+   "n_apertures": 2,
+   "rho_env": 0.25,
+   "logMs": 11.35
+  },
+  {
+   "name": "NGC821",
+   "sigma": 193.0,
+   "D": 0.24,
+   "n_apertures": 2,
+   "rho_env": 0.08,
+   "logMs": 10.97
+  },
+  {
+   "name": "NGC1023",
+   "sigma": 183.0,
+   "D": 0.008,
+   "n_apertures": 2,
+   "rho_env": 0.57,
+   "logMs": 10.98
+  },
+  {
+   "name": "NGC1400",
+   "sigma": 236.0,
+   "D": -0.03,
+   "n_apertures": 2,
+   "rho_env": 0.07,
+   "logMs": 11.12
+  },
+  {
+   "name": "NGC1407",
+   "sigma": 252.0,
+   "D": 0.185,
+   "n_apertures": 2,
+   "rho_env": 0.42,
+   "logMs": 11.6
+  },
+  {
+   "name": "NGC2768",
+   "sigma": 206.0,
+   "D": 0.169,
+   "n_apertures": 2,
+   "rho_env": 0.31,
+   "logMs": 11.28
+  },
+  {
+   "name": "NGC3115",
+   "sigma": 248.0,
+   "D": 0.271,
+   "n_apertures": 1,
+   "rho_env": 0.08,
+   "logMs": 10.97
+  },
+  {
+   "name": "NGC3377",
+   "sigma": 135.0,
+   "D": -0.0,
+   "n_apertures": 2,
+   "rho_env": 0.49,
+   "logMs": 10.44
+  },
+  {
+   "name": "NGC3608",
+   "sigma": 179.0,
+   "D": 0.299,
+   "n_apertures": 2,
+   "rho_env": 0.56,
+   "logMs": 10.82
+  },
+  {
+   "name": "NGC4278",
+   "sigma": 228.0,
+   "D": 0.322,
+   "n_apertures": 2,
+   "rho_env": 1.25,
+   "logMs": 10.88
+  },
+  {
+   "name": "NGC4365",
+   "sigma": 253.0,
+   "D": 0.339,
+   "n_apertures": 2,
+   "rho_env": 2.93,
+   "logMs": 11.48
+  },
+  {
+   "name": "NGC4374",
+   "sigma": 284.0,
+   "D": 0.467,
+   "n_apertures": 2,
+   "rho_env": 3.99,
+   "logMs": 11.46
+  },
+  {
+   "name": "NGC4473",
+   "sigma": 189.0,
+   "D": 0.094,
+   "n_apertures": 2,
+   "rho_env": 2.17,
+   "logMs": 10.87
+  },
+  {
+   "name": "NGC4486",
+   "sigma": 307.0,
+   "D": 0.618,
+   "n_apertures": 2,
+   "rho_env": 4.17,
+   "logMs": 11.53
+  },
+  {
+   "name": "NGC4494",
+   "sigma": 157.0,
+   "D": -0.187,
+   "n_apertures": 2,
+   "rho_env": 1.04,
+   "logMs": 11.02
+  },
+  {
+   "name": "NGC4526",
+   "sigma": 233.0,
+   "D": 0.093,
+   "n_apertures": 2,
+   "rho_env": 2.45,
+   "logMs": 11.23
+  },
+  {
+   "name": "NGC4564",
+   "sigma": 153.0,
+   "D": 0.195,
+   "n_apertures": 2,
+   "rho_env": 4.09,
+   "logMs": 10.58
+  },
+  {
+   "name": "NGC4649",
+   "sigma": 308.0,
+   "D": 0.339,
+   "n_apertures": 2,
+   "rho_env": 3.49,
+   "logMs": 11.56
+  },
+  {
+   "name": "NGC4697",
+   "sigma": 180.0,
+   "D": 0.642,
+   "n_apertures": 1,
+   "rho_env": 0.6,
+   "logMs": 11.03
+  },
+  {
+   "name": "NGC5846",
+   "sigma": 231.0,
+   "D": 0.362,
+   "n_apertures": 2,
+   "rho_env": 0.84,
+   "logMs": 11.4
+  },
+  {
+   "name": "NGC7457",
+   "sigma": 74.0,
+   "D": 0.31,
+   "n_apertures": 2,
+   "rho_env": 0.13,
+   "logMs": 10.28
+  },
+  {
+   "name": "NGC3607",
+   "sigma": 229.0,
+   "D": -0.098,
+   "n_apertures": 2,
+   "rho_env": 0.34,
+   "logMs": 11.29
+  },
+  {
+   "name": "NGC5866",
+   "sigma": 163.0,
+   "D": -0.08,
+   "n_apertures": 1,
+   "rho_env": 0.24,
+   "logMs": 10.97
+  }
+ ],
+ "shelf_all": {
+  "N": 21,
+  "mean": 0.20176190476190475,
+  "scatter": 0.21959679604781834
+ },
+ "shelf_lowenv": {
+  "N": 12,
+  "mean": 0.16308333333333336
+ },
+ "shelf_dense": {
+  "N": 9,
+  "mean": 0.25333333333333335
+ },
+ "deviations": [
+  "1-2 aperture points per system vs frozen >=3-point rule (population statistic; logged)",
+  "M/L_K=1 fiducial (Alabi+16); Salpeter fork exists in their appendix, not parsed"
+ ],
+ "proxy_note": "sigma = central stellar dispersion (1 kpc); for group centrals the SYSTEM sigma exceeds this \u2014 dense-env split reported"
+}

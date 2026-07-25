@@ -1,0 +1,71 @@
+{
+ "surface_density": {
+  "Sigma0_SI": 0.268994270014471,
+  "Sigma0_Msun_pc2": 128.775461531779,
+  "observed": "Donato+09: ~140 (+80/-30) Msun/pc^2, universal",
+  "verdict": "predicted 129 Msun/pc^2 \u2014 zero-parameter"
+ },
+ "cores": {
+  "formula": "R_core = (v_flat/sqrt2)/sqrt(4 pi G rho_c)  [kpc]",
+  "values_kpc": {
+   "v=50,rho=0.1": 0.48,
+   "v=100,rho=0.05": 1.36,
+   "v=200,rho=0.02": 4.3
+  },
+  "verdict": "kpc-scale cores from phonon pressure \u2014 core-cusp addressed; scaling R_core \u221d v_flat/sqrt(rho_c) testable"
+ },
+ "landau": {
+  "v_crit": "c_s = v_flat/sqrt(2); circular orbits are Mach sqrt(2) (reduced Cherenkov drag); sub-sonic tracers feel ZERO phonon friction",
+  "fornax": {
+   "v_flat_km": 18,
+   "c_s_km": 12.7,
+   "GC_orbital_km": "~10",
+   "verdict": "GCs subsonic => no DM friction => Fornax timing problem resolved"
+  },
+  "bars": "condensate has no resonant particles => no bar slow-down => fast bars natural (known LCDM tension eased)"
+ },
+ "df2": {
+  "sigma_isolated_MOND_km": 19.6,
+  "sigma_EFE_Newtonian_km": 9.3,
+  "observed": "8.5 (+2.3/-3.1) km/s (van Dokkum+18)",
+  "verdict": "EFE-analog predicts 'DM-free-looking' satellites in strong external fields and DM-rich isolated dwarfs with ONE mechanism \u2014 DF2 matches the EFE branch, excludes isolated-MOND; same physics DR4 tests"
+ },
+ "bullet": {
+  "a_s_max_m": 7.764688306127226e-21,
+  "g_max_Jm3": 7.161406056268159e-53,
+  "cs_contact_cosmic_max": 2.6408706867918296e-05,
+  "cmb_gate_was": 0.61,
+  "tightening": 23098.442610267957,
+  "floor_branch": 2.05e-09,
+  "verdict": "collisionless passage => contact-branch c_s(cosmic) < 2.6e-05 m/s \u2014 tightens the CMB gate x23098; floor branch passes by 4 dex. STRUCTURAL implication: the carrier is (nearly) non-self-interacting; its superfluidity/phonons are ENTROPIC (X^{3/2}) in origin, not contact-interaction [UV: O]"
+ },
+ "submm": {
+  "l_pl_ac_mm": 0.43,
+  "screening_suppression": {
+   "p=1/2": 3.390939537652099e-06,
+   "p=1": 1.1498470948012232e-11
+  },
+  "eotwash_alpha_at_0p4mm": "~1e-2..1e-3",
+  "verdict": "phonon fifth force screened to alpha ~ 3.4e-6 (p=1/2) or 1.1e-11 (p=1): NULL at current sensitivity \u2014 the acoustic Planck length sits at 0.43 mm yet predicts no sub-mm deviation; p=1/2 fork is a ~300x-improvement long-shot lab target"
+ },
+ "production": {
+  "thermal_velocity_today_km": 4230.240381257605,
+  "verdict": "a THERMAL 8.5 eV boson is hot/warm DM (free-streaming ~Mpc; Lya requires m_thermal >~ few keV) => thermally produced carrier EXCLUDED => non-thermal, born-cold genesis REQUIRED (misalignment-like; not the QCD axion at this mass) [O: production mechanism is the leading particle-physics open item]"
+ },
+ "r_superfluid": {
+  "MW_kpc": {
+   "sigma_eq_v": 185.0,
+   "sigma_eq_v_over_rt2": 310.0
+  },
+  "verdict": "MW superfluid out to ~60-130 kpc (estimator band): solar neighborhood and the WB sample are deep inside (validates D4); rotation curves slightly sub-MOND beyond R_SF \u2014 outermost-HI test"
+ },
+ "phase_diagram": {
+  "scaling": "T/T_c \u221d sigma^2/rho^{2/3} \u221d M^{2/3} at fixed virial density",
+  "verdict": "smaller halos are MORE superfluid: dwarfs fully MONDian, clusters normal \u2014 one phase diagram gives MOND-in-galaxies + CDM-in-clusters + sigma_crit (D5)"
+ },
+ "lensing": {
+  "requirement": "photons ride the FUNDAMENTAL metric: the induced condensate polarization must track the phantom (phonon-force) profile for lensing to equal dynamics",
+  "status": "[P] Brouwer+21 weak-lensing RAR follows the dynamical RAR to g_bar ~ 1e-12.5 \u2014 currently consistent",
+  "kill": "a future lensing-vs-dynamics mismatch at large radii kills the phonon-force reading"
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "inputs": {
+  "a0_sparc": 1.128e-10,
+  "stat": 1.9e-12,
+  "sys": 2.256e-11,
+  "H0_planck": 67.36,
+  "OmL": 0.6847,
+  "Lambda": 1.0891388337006832e-52
+ },
+ "candidates": {
+  "MOD": {
+   "form": "c^2 sqrt(Lambda/3)/(2pi)",
+   "a0_pred": 8.618715235940999e-11,
+   "dev_pct": 30.8779753270087,
+   "sigma_with_sys": 1.1754860160480178
+  },
+  "CPL": {
+   "form": "c^2 sqrt(Lambda/(24pi)) = kappa_dS/sqrt(8pi)",
+   "a0_pred": 1.080195765070135e-10,
+   "dev_pct": 4.425515862558596,
+   "sigma_with_sys": 0.21115068340985962
+  },
+  "ratio_CPL_over_MOD": 1.2533141373155001
+ },
+ "identities": {
+  "sqrt_OmL_over_8pi_at_0p7": 0.16688952945311364,
+  "one_sixth": 0.16666666666666666,
+  "reading": "sqrt(OmL/8pi) = 0.16689 at OmL=0.7 vs 1/6 = 0.16667 (0.13%): Verlinde's 1/6 is the OmL~0.7 shadow of sqrt(1/8pi); the two differ ONLY through OmL-scaling."
+ },
+ "implied": {
+  "H0_if_CPL": 69.56805345533216,
+  "Lambda_from_a0": 1.1876719565723102e-52,
+  "Lambda_planck": 1.0891388337006832e-52,
+  "lambda_agreement_pct": 9.046883631614765
+ },
+ "verdict": "DECIDED FOR THE 1/6-CLASS, with derived exact form a0 = c^2 sqrt(Lambda/24pi) = kappa_dS/sqrt(8pi). Grounds: (L1) the bare-1/2pi reading fits only at H0~73 with a lock to TOTAL H(z=0), which implies a0~H(z) evolution \u2014 killed by our T2.4 (const preferred 3.2-6.3 sigma). (L2) parameter-free vs Planck Lambda: CPL deviates +4.4 pct (+0.21 sigma incl. M/L systematics); MOD deviates +30.9 pct (+1.18 sigma) \u2014 the Lambda-native modular route is disfavored, the coupling route agrees. (L3) the sqrt(8pi) is the square root of the paper's Eq.-(28) coupling alpha=8pi \u2014 the natural amplitude scaling for a force that is a SECOND-MOMENT (mean-from-noise) effect, per the Oppenheim-Russo mechanism; the modular 2pi belongs to frequency conversion, not force amplitude. NOT yet a >3-sigma magnitude exclusion of MOD on a0 alone (M/L systematic ~20 pct); named escalation: M/L-marginalized RAR refit. Corollaries: implied H0 = 69.6 km/s/Mpc (sides with ~70, against 73 \u2014 the 1/2pi@H0=73 reading is doubly rejected); a0 becomes a Lambda-meter: Lambda(a0) agrees with Planck to +9 pct. Discriminator vs exact-elastic-1/6: our coefficient scales as sqrt(OmL); Verlinde's is OmL-independent \u2014 separable in principle by joint (a0, OmL, H0) fits.",
+ "tier2_kill_test": "Compute the B-coefficient of the Sec.-4 template on the acoustic horizon algebra (the 'constants bookkeeping against the 8pi normalization' the program itemizes): the identification DIES unless the Lambda-channel variance bookkeeping returns 1/8pi."
+}

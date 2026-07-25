@@ -1,0 +1,24 @@
+{
+ "branch_table": {
+  "X>0": "P'>0, P''>0: healthy; c_s^2 = 2 hbar X/m",
+  "X<0": "P'>0, P''<0: ghost + gradient instability (BK branch); tau(k=1/kpc) ~ 6 Myr"
+ },
+ "occupancy_finding": "no direct coupling -> static solutions u=0, X_bar>0 throughout; X<0 branch never invoked in the frozen formalism",
+ "mw_scan": {
+  "Xbar0_s": 1728362784.199498,
+  "mu_eV": 1.1376290498120218e-06,
+  "cs_over_c": 0.0005189039540849304,
+  "healthy_radii": "all with X_bar>0"
+ },
+ "boundary": {
+  "fn_law": "f_n=(r/R_SF)^2 under T/Tc ~ r^(4/3)",
+  "fn_gt_10pct_outside_kpc": 63.245553203367585,
+  "parallel": "interior healthy without finite-T (unlike BK MOND region); boundary shares BK's normal-fraction reliance"
+ },
+ "jeans_kpc": 34.588825685593314,
+ "remaining": [
+  "two-fluid closure at boundary",
+  "time-dependent backgrounds/mergers",
+  "phonon-metric coupling beyond Jeans"
+ ]
+}

@@ -1,0 +1,52 @@
+#!/usr/bin/env python
+"""T3.8 — synthesis: consolidated verdicts vs the frozen ledger; final numbers for the write-up."""
+import os, sys, json
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from t3_guard import enforce, DERIVED
+
+freezes, _ = enforce(allow_dirty_paths=("t3_8_synthesis.py",))
+FZ = freezes[-1]
+t31 = json.load(open(os.path.join(DERIVED, "t3_1_anchors.json")))
+t32 = json.load(open(os.path.join(DERIVED, "t3_2_shelf.json")))
+t33 = json.load(open(os.path.join(DERIVED, "t3_3_straddle.json")))
+t34 = json.load(open(os.path.join(DERIVED, "t3_4_discriminator.json")))
+t35 = json.load(open(os.path.join(DERIVED, "t3_5_systematics.json")))
+
+syn = {
+ "frozen_against": FZ["provenance"],
+ "predictions": {
+  "P1_condensed_floor": {"frozen": "|mean D|<0.10, sigma<200, relaxed", "measured": "-0.036 (SPARC+field ETGs, N=167)",
+                          "verdict": "PASS"},
+  "P2_normal_excess": {"frozen": "mean D>0.15, sigma>1000", "measured": "+0.44 (N=4); +0.374 under MAXIMAL baryon fork",
+                        "verdict": "PASS, fork-proof"},
+  "P3_break": {"frozen": f"transition centered in {FZ['kernel']['sigma_crit_km_s']['outer_envelope']}",
+               "measured": "sigma_b=254, stat [215,315], syst [215,829]; step 0.74-1.00 in every fork",
+               "verdict": "PASS (existence robust; location systematics-limited)"},
+  "P4_discriminator": {"frozen": "D tracks sigma at fixed M, not M, not z",
+                        "measured": "M-leg unidentifiable in single-method sample (collinearity 0.89, mechanical entanglement) - DEFERRED; z invariant (+0.033 over z=0.01-0.23); host-halo pattern in shelf qualitatively supportive",
+                        "verdict": "PARTIAL (no adverse finding; decisive leg needs mixed-method samples)"}},
+ "kill_conditions": {
+  "K1_P4_inverted_Mtracking": "NOT TRIGGERED (leg deferred; no adverse finding)",
+  "K2_break_outside_envelope": "NOT TRIGGERED (inside at every fork)",
+  "K3_no_transition": "NOT TRIGGERED (D(>1000)-D(<200) = +0.48; step never fits to zero)",
+  "K4_P1_failure": "NOT TRIGGERED (-0.036)"},
+ "headline_numbers": {
+  "break": {"sigma_b": 254, "stat": [215, 315], "syst_envelope": [215, 829]},
+  "m_eV": {"central": 16, "combined_band": [5, 25], "frozen_window": [5.8, 16.3],
+           "corner": "UNDECIDED (T3.3 heavy-corner preference superseded by T3.5; fiducial 8.45 fully compatible)"},
+  "fork_proof": {"cluster_D_at_cosmic_fb": 0.374, "group_floor_at_cosmic_fb": 0.178,
+                  "feedback_amplitude_cap": "57% of group elevation", "groups_above_015_at_cosmic_fb": "29/42"}},
+ "new_results_for_series_ledger": {
+  "N16": "The sigma-resolved RAR break exists in archival data (226 systems, four classes): existence robust across every systematics fork",
+  "N17": "The maximal-baryon fork method: full-cosmic-baryon restoration caps feedback explanations at 57% of the group elevation and leaves clusters at D'=+0.374 - the RAR violation above group scale is not baryonic bookkeeping",
+  "N18": "Carrier-mass inversion from the break: m = 16 eV central with combined band [5,25] eV - consistent with, and not yet narrowing, the frozen window"},
+ "not_done": ["mixed-method P4 leg (dynamical sigma x lensing masses)", "break sharpness unresolved (width 0.9-1.35 ln sigma)",
+               "GAMA population / z-reach (skipped: no marginal value at current systematics floor)",
+               "partial-restoration baryon model (truth between V0 and V1)"],
+ "series_implications": {
+  "wide_binary_prediction": "UNAFFECTED at any m in band (MW sigma~156 condensed under all variants)",
+  "decay_line": "window unchanged 152-428 nm (band does not narrow it)",
+  "papers_language": "'sigma_crit 500-800' and 'groups straddle' passages: revise to kernel-correct framing per this synthesis (Paper V frames it)"}}
+json.dump(syn, open(os.path.join(DERIVED, "t3_8_synthesis.json"), "w"), indent=1)
+print("T3.8 synthesis written. Verdicts: P1 PASS | P2 PASS(fork-proof) | P3 PASS(existence) | P4 PARTIAL | kills: none triggered")
+print(f"m = 16 eV, band [5,25] vs window [5.8,16.3]: corner UNDECIDED, fiducial compatible")

@@ -1,0 +1,27 @@
+{
+ "z0": {
+  "a0": 1.127505180661276e-10,
+  "a0_err": 1.9275471550771197e-12,
+  "scatter_dex": 0.1436949715368855,
+  "n_points": 2807
+ },
+ "models": {
+  "corr": {
+   "chi2_const": 0.17,
+   "chi2_cHz": 39.24,
+   "delta_chi2_cHz_minus_const": 39.06,
+   "sigma_pref": 6.3,
+   "preferred": "const"
+  },
+  "uncorr": {
+   "chi2_const": 8.08,
+   "chi2_cHz": 145.84,
+   "delta_chi2_cHz_minus_const": 137.76,
+   "sigma_pref": 11.7,
+   "preferred": "const"
+  }
+ },
+ "sigma_corr_nominal": 6.3,
+ "sigma_corr_inflated": 3.2,
+ "verdict": "z=0 anchor solid (a0=1.13e-10, 175 SPARC galaxies, scatter 0.14 dex). High-z (corrected variant): a0=const preferred over the frozen a0\u221dcH(z) lock at ~6.3 sigma nominal, ~3.2 sigma with systematics inflated x2 \u2014 MEETS the frozen >=3-sigma kill threshold (marginally). Compilation is literature-grade [S] with contested pressure-support corrections, so per program style: B3 LOCK BROKEN (marginal, pending primary IFU reanalysis) => B3 survives only by demoting a0~cH0 to a today-coincidence \u2014 RETREAT-FLAG. The uncorrected variant rejects cH(z) even harder."
+}
