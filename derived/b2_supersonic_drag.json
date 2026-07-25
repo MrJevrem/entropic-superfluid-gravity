@@ -1,0 +1,10 @@
+{
+ "mach": 1.4181818181818182,
+ "I_sf": 1.958797938379906,
+ "I_cdm": 0.9899339466351933,
+ "ratio": 1.9787157971881884,
+ "tau_sf_Gyr": 0.08148024432948209,
+ "tau_cdm_Gyr": 0.16122624661349946,
+ "verdict": "ADVERSE: Mach-1.4 phonon-radiation drag is ~2x the collisionless drag; 'eased' wording unsupported; fast-bar tension shared with CDM, unresolved; mitigations named (resonant torque; partial corotation). Fornax subsonic zero-drag ROBUST [M].",
+ "paper_action": "reword [N9] bar row at next pass"
+}

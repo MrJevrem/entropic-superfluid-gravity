@@ -1,0 +1,14 @@
+{
+ "gw_speed": "c identically (structural); medium response 1e-40-class",
+ "ppn": "gamma-1 and alpha_1-class void via the D33 tail (10^-thousands)",
+ "pn_in_halo": {
+  "wb_correction": 2.5e-07,
+  "verdict": "WB prediction robust"
+ },
+ "bh_decoupling": {
+  "SgrA_r_ac_pc": 3.0576123156646076,
+  "M87_r_ac_pc": 4621.9721050744065,
+  "prediction": "pure GR inside r_ac; a0-phenomenology there would falsify"
+ },
+ "residue": "covariant action write-up (standard pieces; no observational obstruction)"
+}

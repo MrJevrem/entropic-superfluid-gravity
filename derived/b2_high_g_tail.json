@@ -1,0 +1,20 @@
+{
+ "derived_form": "nu1(x) = erf(sqrt(x/pi)) + x^(-1/2) exp(-x/pi); sigma^2 = (pi/2) a0 g_N from deep-MOND matching",
+ "fork_kill": {
+  "three_d_residual": 8.482300164692442e-11,
+  "saturn_bound": 8e-15,
+  "excluded_dex": 4.025423649861177
+ },
+ "solar_ledger": {
+  "Saturn": "10^-8,320",
+  "Mercury": "10^-50,432,083",
+  "solar_limb": "10^-350,720,576,173"
+ },
+ "transition": {
+  "a0_refit": 1.258359213500126e-10,
+  "shift_pct": 4.863267791677162,
+  "rms_dex": 0.04796865999542563,
+  "max_dex": 0.07853539110628346
+ },
+ "verdict": "T-1 RESOLVED: tail derived exponential exp(-g/(pi a0)) from [A3]-Gaussianity + radial channel; 3D fork killed by ephemerides (4.6 dex); solar system safe by thousands of dex; transition shape a zero-parameter near-term test"
+}

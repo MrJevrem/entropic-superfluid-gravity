@@ -1,0 +1,15 @@
+{
+ "stiff_branch": {
+  "w_rec": 0.17,
+  "status": "excluded + unreachable (misalignment IC)"
+ },
+ "dust_ledger": {
+  "kJ_today_per_Mpc": 45866090833714.875,
+  "Pk_suppression_at_k10": 2.2596079435700438e-51
+ },
+ "a0_channel": {
+  "gateA": "x ~ O(1-100) at peaks \u2014 insufficient alone",
+  "gateB": "establishment time 1e20+ t_H \u2014 operative"
+ },
+ "verdict": "linear cosmology = CDM as branch-selection theorem + deviation ledger; residue: Boltzmann run (cosmetic), nonlinear wave sims (real)"
+}
