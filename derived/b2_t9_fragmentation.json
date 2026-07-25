@@ -1,0 +1,46 @@
+{
+ "speckle_moments": {
+  "1": [
+   1.0,
+   1.0
+  ],
+  "2": [
+   1.504094963400822,
+   2.508618131124888
+  ],
+  "3": [
+   1.6590411221812096,
+   3.424168736162743
+  ],
+  "5": [
+   1.796679291436358,
+   4.3450726227553735
+  ],
+  "10": [
+   1.8936278339202621,
+   5.12290326867829
+  ],
+  "30": [
+   1.9784889753335808,
+   5.771682118504244
+  ],
+  "1000": [
+   1.990768456621797,
+   5.934895709764219
+  ]
+ },
+ "cubic_two_mode_anchor": "reproduces g N1 N2 / V exactly",
+ "gap_per_particle_J": 1.5274382143084314e-25,
+ "gap_per_particle_eV": 9.533519475284218e-07,
+ "gap_total_J": 2.0167648800000002e+52,
+ "halo_binding_J": 2.420117856e+52,
+ "gap_over_binding": 0.8333333333333334,
+ "penalty_mu_units": {
+  "quintic": 1.6666666666666667,
+  "cubic": 0.5
+ },
+ "macrostate_ratio_Ea_over_Eb": 12.0,
+ "xi_over_lambda": 0.15915494299437802,
+ "gradient_corr": 0.025330295879543715,
+ "verdict": "RESOLVED-CONDITIONAL: convexity of eps~n^3 gaps fragmentation at (5/6)mc_s^2/particle; residual: S_rel scale assignment (T-5)"
+}

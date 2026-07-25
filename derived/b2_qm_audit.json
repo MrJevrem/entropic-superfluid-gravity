@@ -1,0 +1,24 @@
+{
+ "lambda_dB_mm": 0.3987683966087853,
+ "tau_coh_s": 3.6150235559610098e-09,
+ "f_osc_Hz": 2043200909561755.5,
+ "occupancy": 420.9558016823357,
+ "f_PO": 3.1881950365202755e-75,
+ "N_modes": 3.136570970549657e+74,
+ "tau_quartic_dex_over_tU": 60.56556233548897,
+ "tau_grav_dex_over_tU": 70.27606732347266,
+ "a_Q": 8.340840776698138e-58,
+ "M_superradiance_kg": 1.320732100853259e+19,
+ "stellar_margin_dex": 4.2632414347745815,
+ "per_cell_fluct": 0.04873957639096068,
+ "coarse_grained_fluct": 2.2642912987541052e-30,
+ "issues": {
+  "I1": "PO failure quantified: f_PO~4e-75; A4 owns rigidity",
+  "I2": "mode-selection derivation open (T-9)",
+  "I3": "one-way fragility; Liouville is the safety net",
+  "I4": "entropic phonon canonical structure (T-5)",
+  "I5": "marginal classicality, coarse-grain-killed",
+  "I6": "QP/solitons/superradiance/stellar/oscillation null"
+ },
+ "verdict": "QM-consistent as a degenerate classical wave field; every quantum duty beyond degeneracy is A4's, now with sharp numbers"
+}

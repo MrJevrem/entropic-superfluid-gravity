@@ -1,0 +1,18 @@
+{
+ "theorem_I": {
+  "eta_xi2_at_physical_regulator": 0.0066314559617825395,
+  "frozen_1_over_48pi": 0.006631455962162306,
+  "ratio": 0.9999999999427326,
+  "coarse_grained_suppression": 39.478417690353815,
+  "l_Pl_ac_mm": 0.38967848026234114,
+  "statement": "resolution forced by the Bogoliubov regulator; frozen [N3] incompatible with coarse-graining ((2pi)^2 off); observable-locked via l_Pl,ac"
+ },
+ "theorem_II": {
+  "cs2_check": "n eps''/m = 2 hbar gamma n^2/m reproduced exactly",
+  "one_hbar": "M_Pl,ac = m/sqrt(12pi) inherited from the carrier",
+  "accuracy_floor_percent": 4.873701788285794,
+  "statement": "canonical structure particle-inherited; phonon vacuum Gaussian; [N3]/D22 legitimate; local-thermodynamic escape retired"
+ },
+ "open_deep_stratum": "microscopic origin of S=dA/4 (spacetime AND acoustic) \u2014 founding-aim horizon, not closed",
+ "verdict": "T-5 tractable stratum CLOSED: D28/D31 conditionality upgraded from 'assumed' to 'internally forced'"
+}

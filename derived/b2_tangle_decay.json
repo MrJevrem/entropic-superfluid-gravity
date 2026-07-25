@@ -1,0 +1,30 @@
+{
+ "kappa_m2s": 43.98760662893356,
+ "ladder": {
+  "R1_ns": 3.6150235559610095,
+  "R2_delta_mm": 6.346596146911756,
+  "R3_Gyr_band": [
+   6.057991625826405,
+   60.57991625826405
+  ],
+  "delta_tH_over_deq_band": [
+   0.4772821681279485,
+   1.50929873786774
+  ]
+ },
+ "sim": {
+  "Lambda_0.0": {
+   "nu_over_kappa": 0.007955175642894214,
+   "G_first": 0.946,
+   "G_last": 0.366
+  },
+  "Lambda_0.05": {
+   "nu_over_kappa": 0.11811487395736639,
+   "G_first": 0.912,
+   "G_last": 0.011
+  }
+ },
+ "pass_criterion": "nu'/kappa >= 0.05",
+ "passed": false,
+ "verdict": "adverse: anomalously slow quintic ordering"
+}

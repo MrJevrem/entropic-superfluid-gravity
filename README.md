@@ -8,7 +8,7 @@ Manuscripts: deposited at DOI [10.5281/zenodo.21561506](https://doi.org/10.5281/
 
 | Paper | Content |
 |---|---|
-| I (flagship) | assumptions [A1–A4], the a₀ law, counted G_ph, dark-energy sector, master results ledger [N1–N19] |
+| I (flagship) | assumptions [A1–A4], the a₀ law, counted G_ph, dark-energy sector, master results ledger [N1–N22] |
 | II | the pulsar-timing ceiling K₉₅ = 5.6×10⁻¹³ s² kpc⁻¹ (self-contained archival measurement) |
 | III | dark-matter phenomenology, carrier identity card, falsification calendar |
 | IV | the quintic superfluid: exact black soliton, branch-edge physics, laboratory analog |
@@ -62,7 +62,7 @@ This public snapshot carries the ledgers and their embedded timestamps; the comm
 
 **T3 — the σ-resolved RAR (Paper V):** `t3_1_anchors.py` through `t3_5_systematics.py` (anchors, shelf, break fit, discriminator grid, fork forest), `t3_6_fb_baseline.py` (the partial-restoration f_b(σ) model and the m = 7.9 eV pin), `t3_8_synthesis.py` (verdicts vs the frozen ledger).
 
-**D-chain — conditional derivations (the theory record, D0–D26):** `b2_derivations.py` (the base chain), `b2_epsilon_decision.py` (1/6 vs 1/2π), `b2_gph_counting.py` (G_ph), `b2_lambda_bookkeeping.py` / `b2_f_floor_test.py` / `b2_ossw_saturation.py` (the separation-theorem exhaustion), `b2_theta2_identity.py` / `b2_consistency_triad.py` (the second-order law), `b2_dm_implications.py` / `b2_production.py` (carrier identity), `b2_x32_coexistence.py`, `b2_cw_matching.py`, `b2_screen_eigenvalue.py` / `b2_notch_bdg.py` / `b2_mode_selection.py` (the C_T program), `b2_phonon_stability.py` (D22), `b2_vortices.py` (D23), `b2_rsf_outer_halo.py` (D24), `b2_isolated_giants.py` (D25), `b2_quantum_breaking.py` (D26).
+**D-chain — conditional derivations (the theory record, D0–D32):** `b2_derivations.py` (the base chain), `b2_epsilon_decision.py` (1/6 vs 1/2π), `b2_gph_counting.py` (G_ph), `b2_lambda_bookkeeping.py` / `b2_f_floor_test.py` / `b2_ossw_saturation.py` (the separation-theorem exhaustion), `b2_theta2_identity.py` / `b2_consistency_triad.py` (the second-order law), `b2_dm_implications.py` / `b2_production.py` (carrier identity), `b2_x32_coexistence.py`, `b2_cw_matching.py`, `b2_screen_eigenvalue.py` / `b2_notch_bdg.py` / `b2_mode_selection.py` (the C_T program), `b2_phonon_stability.py` (D22), `b2_vortices.py` (D23), `b2_rsf_outer_halo.py` (D24), `b2_isolated_giants.py` (D25), `b2_quantum_breaking.py` (D26), `b2_qm_audit.py` (D27: the quantum-mechanical particle audit), `b2_t9_fragmentation.py` (D28: the mode-selection theorem), `t10_collapse_sim.py` / `t10b_time_extension.py` (D29: quintic-GPP collapse + the condensation channel), `b2_wave_kinetic_rate.py` (D30: the phase-ordering ladder), `b2_tangle_decay.py` (D31: 3D tangle decay; the pre-registered criterion's recorded failure), `b2_substrate_consistency.py` (D32: the resolution-lock and canonical-inheritance theorems).
 
 **Hardening and figures:** `p1_referee_hardening.py` (Paper I checks + the portfolio lint), `p2_…`–`p4_…`, `p_letter_hardening.py` (per-paper claim verification), `paper_figures.py` (all publication figures).
 

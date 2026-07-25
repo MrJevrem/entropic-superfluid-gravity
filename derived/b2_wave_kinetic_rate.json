@@ -1,0 +1,35 @@
+{
+ "mu_J": 9.164629285850588e-26,
+ "tau_micro_ns": 1.1506977359446167,
+ "xi_mm": 0.06346596143023076,
+ "beta_toy": 0.6648879385392081,
+ "ladder": {
+  "ballistic (sound-limited), l/c_s": {
+   "t_disc_Gyr": 0.2659061366270998,
+   "t_RSF_Gyr": 1.6486180470880185
+  },
+  "toy exponent beta=0.66": {
+   "t_disc_Gyr": 2562738934516.482,
+   "t_RSF_Gyr": 39853975198571.35
+  },
+  "diffusive, tau*(l/xi)^2": {
+   "t_disc_Gyr": 7.756975997524963e+24,
+   "t_RSF_Gyr": 2.9817815734485955e+26
+  },
+  "Svistunov-type, l^2/(xi c_s)": {
+   "t_disc_Gyr": 3.8784879987624814e+24,
+   "t_RSF_Gyr": 1.4908907867242978e+26
+  }
+ },
+ "locks": {
+  "rar_tightness": "tau(30kpc) << Gyr",
+  "a0z_const": "tau(R_SF) < ~6 Gyr",
+  "d22_shape": "inside-out ordering matches f_n(r)"
+ },
+ "ballistic_Gyr": {
+  "disc": 0.2659061366270998,
+  "rsf": 1.6486180470880185
+ },
+ "vortex_coarsening_dex": 12.861677265817706,
+ "verdict": "EXPONENT FORK: survives iff ordering is sound-limited (0.27/1.6 Gyr, all locks pass); dies if the toy's diffusive class persists (16-25 dex short). Decisive: 3D dissipative tangle decay in the quintic medium (-> T-3)."
+}
