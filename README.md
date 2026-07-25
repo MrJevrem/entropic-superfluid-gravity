@@ -1,5 +1,7 @@
 # Entropic Gravity on a Dark Superfluid — analysis code and frozen prediction ledgers
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21560680.svg)](https://doi.org/10.5281/zenodo.21560680)
+
 Code, derived products, and pre-registered prediction ledgers for a six-manuscript series deriving the Milgrom acceleration scale a₀ = c²√(Λ/24π) from the Dorau–Much relative-entropy theorem (PRL **136**, 091602) joined to Berezhiani–Khoury superfluid dark matter (PRD **92**, 103510) by two postulates — and staking the result on a **frozen, single-fork Gaia DR4 wide-binary prediction (δṽ = 0.12–0.17) decided on 2026-12-02**.
 
 Manuscripts: *(links added at deposit — Zenodo DOI / arXiv IDs)*
