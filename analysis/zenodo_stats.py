@@ -9,14 +9,19 @@ import json, subprocess, urllib.request, datetime, os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from t3_guard import DERIVED
 
-RECS = {"ms_v1": 21561507, "ms_v2": 21571242, "ms_v3": 21572393, "ms_v4": 21626776, "ms_v5": 21627204,
+RECS = {"ms_v1": 21561507, "ms_v2": 21571242, "ms_v3": 21572393, "ms_v4": 21626776, "ms_v5": 21627204, "ms_v6": 21627781,
         "code_v1.0": 21560681, "code_v1.1": 21571552, "code_v1.2": 21626861}
 snap = {"utc": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds")}
 for name, rid in RECS.items():
     try:
         with urllib.request.urlopen(f"https://zenodo.org/api/records/{rid}", timeout=60) as r:
             s = json.loads(r.read().decode(), strict=False).get("stats", {})
-        snap[name] = {k: s.get(k, 0) for k in ("views", "unique_views", "downloads", "unique_downloads")}
+        snap[name] = {k: s.get(k, 0) for k in ("views", "unique_views", "downloads", "unique_downloads",
+                                                "version_views", "version_unique_views",
+                                                "version_downloads", "version_unique_downloads")}
+        # NB Zenodo semantics: plain keys = ALL-VERSIONS concept aggregate (identical across
+        # sibling versions); version_* keys = THIS record's own page. REST API hits are
+        # filtered by their COUNTER pipeline and do not count as views (verified 2026-07-27).
     except Exception as e:
         snap[name] = {"error": str(e)[:60]}
 try:
@@ -42,8 +47,8 @@ if len(lines) >= 2:
     prev = json.loads(lines[-2])
 print(f"snapshot @ {snap['utc']}")
 for name in RECS:
-    v = snap[name].get("unique_views", "?")
+    v = snap[name].get("unique_views", "?"); vv = snap[name].get("version_unique_views", "?")
     d = f" (+{snap[name]['unique_views'] - prev[name]['unique_views']})" if prev and "unique_views" in prev.get(name, {}) else ""
-    print(f"  {name:10s} unique views: {v}{d}  downloads: {snap[name].get('unique_downloads', '?')}")
+    print(f"  {name:10s} concept uniq: {v}{d}  own-page uniq: {vv}  downloads: {snap[name].get('unique_downloads', '?')}")
 print(f"  github: views {snap.get('gh_views', {})}, clones {snap.get('gh_clones', {})}")
 print(f"appended to {log} ({len(lines)} snapshots)")
