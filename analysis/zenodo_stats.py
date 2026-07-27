@@ -9,8 +9,8 @@ import json, subprocess, urllib.request, datetime, os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from t3_guard import DERIVED
 
-RECS = {"ms_v1": 21561507, "ms_v2": 21571242, "ms_v3": 21572393, "ms_v4": 21626776,
-        "code_v1.0": 21560681, "code_v1.1": 21571552}
+RECS = {"ms_v1": 21561507, "ms_v2": 21571242, "ms_v3": 21572393, "ms_v4": 21626776, "ms_v5": 21627204,
+        "code_v1.0": 21560681, "code_v1.1": 21571552, "code_v1.2": 21626861}
 snap = {"utc": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds")}
 for name, rid in RECS.items():
     try:
