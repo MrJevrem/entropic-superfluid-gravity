@@ -1,0 +1,44 @@
+{
+ "frozen_against": {
+  "git_commit": "38465afc79fcfa41573c36da01be3f0c80006a71",
+  "utc": "2026-07-25T10:35:28.352217+00:00",
+  "script": "analysis/t3_predictions_freeze.py",
+  "plan": "docs/T3_PLAN_sigma_resolved_RAR.md"
+ },
+ "budgets": {
+  "s09": {
+   "sigma_b": 253.77294024221064,
+   "S09_meanD": 0.35493019144757637,
+   "n": 42,
+   "n_phot": 39
+  },
+  "bcg": {
+   "sigma_b": 252.88446000642597,
+   "S09_meanD": 0.35663472432448295,
+   "n": 42,
+   "n_phot": 39
+  },
+  "sum": {
+   "sigma_b": 560.057012243751,
+   "S09_meanD": 0.27747566429912046,
+   "n": 42,
+   "n_phot": 39
+  },
+  "sum_bg": {
+   "sigma_b": 508.29765474627425,
+   "S09_meanD": 0.29117300609357605,
+   "n": 42,
+   "n_phot": 39
+  }
+ },
+ "phot_vs_tab": {
+  "offset": 0.5011936523704557,
+  "scatter": 0.2119178682677335,
+  "n": 39
+ },
+ "conventions": [
+  "XSC Kmag < 14, cone r500 (<=30'), M_Ksun=3.28, kcorr -2.1z, M/L_K=1 frozen",
+  "no statistical background subtraction (biases summed M* high, D low; logged)",
+  "groups without photometry fall back to S09 LK (logged per count)"
+ ]
+}

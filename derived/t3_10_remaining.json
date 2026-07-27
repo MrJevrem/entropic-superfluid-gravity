@@ -1,0 +1,36 @@
+{
+ "combined": {
+  "plain": {
+   "sigma_b": 627.702485634283,
+   "lo": 598.7629799003485,
+   "hi": 679.1759676409529,
+   "fb25": 0.099,
+   "fb50": 0.115
+  },
+  "lf": {
+   "sigma_b": 638.3619096861496,
+   "lo": 607.6184342338435,
+   "hi": 697.2348691362653,
+   "fb25": 0.099,
+   "fb50": 0.115
+  }
+ },
+ "m_combined": {
+  "m": 8.171736513096356,
+  "lo": 7.702700444297168,
+  "hi": 8.46620022744234
+ },
+ "caustic_c": {
+  "n": 9,
+  "D_duffy": 0.1457929415613349,
+  "D_caustic": 0.1638619151243625,
+  "shift": 0.018068973563027585
+ },
+ "viola_probe": "not on VizieR; manual-table route remains",
+ "conventions": [
+  "baselines recomputed self-consistently with the photometric budget (sigma>900 S09 set)",
+  "V06 clusters unchanged (above baseline; nominal BCG)",
+  "LF completion: Schechter alpha=-1.09, M*_K=-24.16 [K]; satellites only; floor C>=0.3",
+  "CIRS h=0.7 conversion for masses/radii (h^-1 units)"
+ ]
+}
